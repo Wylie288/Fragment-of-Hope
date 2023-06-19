@@ -3,34 +3,1049 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="15" name="datafiles">
+    <datafile>
+      <name>arena1_1</name>
+      <exists>-1</exists>
+      <size>5855</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>arena1_1</filename>
+    </datafile>
+    <datafile>
+      <name>arena1_2</name>
+      <exists>-1</exists>
+      <size>7210</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>arena1_2</filename>
+    </datafile>
+    <datafile>
+      <name>arena1_3</name>
+      <exists>-1</exists>
+      <size>8724</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>arena1_3</filename>
+    </datafile>
+    <datafile>
+      <name>arena1_4</name>
+      <exists>-1</exists>
+      <size>6494</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>arena1_4</filename>
+    </datafile>
+    <datafile>
+      <name>arena1_5</name>
+      <exists>-1</exists>
+      <size>6457</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>arena1_5</filename>
+    </datafile>
+    <datafile>
+      <name>consumable</name>
+      <exists>-1</exists>
+      <size>10709</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>consumable</filename>
+    </datafile>
+    <datafile>
+      <name>consume1</name>
+      <exists>-1</exists>
+      <size>3123</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>consume1</filename>
+    </datafile>
+    <datafile>
+      <name>consume2</name>
+      <exists>-1</exists>
+      <size>3197</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>consume2</filename>
+    </datafile>
+    <datafile>
+      <name>consume3</name>
+      <exists>-1</exists>
+      <size>3292</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>consume3</filename>
+    </datafile>
+    <datafile>
+      <name>free</name>
+      <exists>-1</exists>
+      <size>4987</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>free</filename>
+    </datafile>
+    <datafile>
+      <name>leave</name>
+      <exists>-1</exists>
+      <size>9604</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>leave</filename>
+    </datafile>
+    <datafile>
+      <name>shop1</name>
+      <exists>-1</exists>
+      <size>6505</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>shop1</filename>
+    </datafile>
+    <datafile>
+      <name>shop2</name>
+      <exists>-1</exists>
+      <size>6213</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>shop2</filename>
+    </datafile>
+    <datafile>
+      <name>shop3</name>
+      <exists>-1</exists>
+      <size>6241</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>shop3</filename>
+    </datafile>
+    <datafile>
+      <name>start</name>
+      <exists>-1</exists>
+      <size>4660</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>start</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\ambient</sound>
+      <sound>sound\battle</sound>
+      <sound>sound\win</sound>
+    </sounds>
+    <sounds name="Sound Effects">
+      <sound>sound\redFire</sound>
+      <sound>sound\redExplosion</sound>
+      <sound>sound\greenFire</sound>
+      <sound>sound\yellowFire</sound>
+      <sound>sound\blueFire</sound>
+      <sound>sound\sndCoin</sound>
+      <sound>sound\sndHit</sound>
+      <sound>sound\kill</sound>
+      <sound>sound\barrel</sound>
+      <sound>sound\crate</sound>
+      <sound>sound\sndShield</sound>
+      <sound>sound\sndKey</sound>
+      <sound>sound\sndHealth</sound>
+      <sound>sound\purpleOrb</sound>
+      <sound>sound\purpleLaser</sound>
+      <sound>sound\purpleWin</sound>
+      <sound>sound\sndTeleport</sound>
+      <sound>sound\sndConsume</sound>
+      <sound>sound\sndItem</sound>
+      <sound>sound\sndHitPlayer</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_player2</sprite>
+      <sprite>sprites\spr_player3</sprite>
+      <sprites name="Guns">
+        <sprite>sprites\spr_weapon</sprite>
+        <sprite>sprites\spr_rbullet</sprite>
+        <sprite>sprites\spr_sbullet</sprite>
+        <sprite>sprites\spr_mbullet</sprite>
+        <sprite>sprites\spr_gbullet</sprite>
+        <sprite>sprites\spr_wbullet</sprite>
+        <sprite>sprites\spr_gexplosion</sprite>
+        <sprite>sprites\spr_purple_orb</sprite>
+        <sprite>sprites\spr_purple_laser</sprite>
+      </sprites>
     </sprites>
-    <sprite>sprites\spr_wall</sprite>
+    <sprites name="Environment">
+      <sprites name="Level">
+        <sprites name="Wall">
+          <sprite>sprites\spr_sandstone</sprite>
+          <sprite>sprites\spr_hedge</sprite>
+          <sprite>sprites\spr_brick</sprite>
+          <sprite>sprites\spr_slate</sprite>
+          <sprite>sprites\spr_entrance1</sprite>
+          <sprite>sprites\spr_entrance1alt</sprite>
+          <sprite>sprites\spr_entrance2</sprite>
+          <sprite>sprites\spr_entrance2alt</sprite>
+          <sprite>sprites\spr_entrance3</sprite>
+          <sprite>sprites\spr_entrance3alt</sprite>
+          <sprite>sprites\spr_entrance4</sprite>
+          <sprite>sprites\spr_entrance4alt</sprite>
+        </sprites>
+        <sprites name="Ground">
+          <sprite>sprites\spr_sand</sprite>
+          <sprite>sprites\spr_grass</sprite>
+          <sprite>sprites\spr_dirt</sprite>
+          <sprite>sprites\spr_stone</sprite>
+        </sprites>
+        <sprites name="Pits">
+          <sprite>sprites\spr_pit</sprite>
+          <sprite>sprites\spr_pit2</sprite>
+          <sprite>sprites\spr_pit3</sprite>
+          <sprite>sprites\spr_pit4</sprite>
+          <sprite>sprites\spr_lava</sprite>
+          <sprite>sprites\spr_water</sprite>
+        </sprites>
+        <sprite>sprites\spr_portal</sprite>
+        <sprite>sprites\spr_jumpPad</sprite>
+        <sprites name="Sandstorm">
+          <sprite>sprites\spr_sandstorm</sprite>
+          <sprite>sprites\spr_sandstorm1</sprite>
+          <sprite>sprites\spr_sandstorm2</sprite>
+          <sprite>sprites\spr_sandstorm3</sprite>
+          <sprite>sprites\spr_sandstorm4</sprite>
+        </sprites>
+        <sprites name="Wind">
+          <sprite>sprites\spr_wind_particle</sprite>
+        </sprites>
+        <sprites name="Thorns">
+          <sprite>sprites\spr_thorns31</sprite>
+          <sprite>sprites\spr_thorns21</sprite>
+          <sprite>sprites\spr_throrns13</sprite>
+          <sprite>sprites\spr_thorns12</sprite>
+        </sprites>
+        <sprites name="Hedge">
+          <sprite>sprites\spr_hedge_up</sprite>
+          <sprite>sprites\spr_hedge_down</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Markers">
+        <sprite>sprites\spr_spawner</sprite>
+        <sprite>sprites\spr_global_ammo</sprite>
+        <sprite>sprites\spr_mp_ammo</sprite>
+        <sprite>sprites\spr_ammo_base</sprite>
+      </sprites>
+      <sprites name="Editor">
+        <sprite>sprites\spr_door_lock</sprite>
+        <sprite>sprites\spr_fight_plate</sprite>
+        <sprite>sprites\spr_room_cap_hor</sprite>
+        <sprite>sprites\spr_room_cap_vert</sprite>
+      </sprites>
+      <sprites name="Rooms">
+        <sprite>sprites\spr_barrel</sprite>
+        <sprite>sprites\spr_spike_barrel</sprite>
+        <sprite>sprites\spr_explosive_barrel</sprite>
+        <sprite>sprites\spr_box</sprite>
+        <sprite>sprites\spr_crate</sprite>
+        <sprite>sprites\spr_majorUpgrade</sprite>
+        <sprite>sprites\spr_finish</sprite>
+        <sprite>sprites\spr_door</sprite>
+        <sprite>sprites\spr_statue</sprite>
+        <sprite>sprites\spr_statue_area</sprite>
+      </sprites>
+      <sprites name="Misc">
+        <sprite>sprites\spr_lock</sprite>
+        <sprite>sprites\spr_barrelWood</sprite>
+        <sprite>sprites\spr_eBarrelWood</sprite>
+        <sprite>sprites\spr_mBarrelWood</sprite>
+        <sprite>sprites\spr_barrel_explosion</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_bad1</sprite>
+      <sprite>sprites\spr_bad1_2</sprite>
+      <sprite>sprites\spr_bad2</sprite>
+      <sprite>sprites\sprite237</sprite>
+      <sprite>sprites\spr_bad2b</sprite>
+      <sprite>sprites\spr_bad2b_dirt</sprite>
+      <sprite>sprites\spr_bad3</sprite>
+      <sprite>sprites\spr_bad3b</sprite>
+      <sprite>sprites\spr_bad3c</sprite>
+      <sprite>sprites\spr_bad4</sprite>
+      <sprite>sprites\spr_bad5</sprite>
+      <sprite>sprites\spr_bad6</sprite>
+      <sprite>sprites\spr_bad7</sprite>
+      <sprite>sprites\spr_bad8</sprite>
+      <sprite>sprites\spr_bad9</sprite>
+      <sprite>sprites\spr_bad9weak</sprite>
+      <sprite>sprites\spr_bad10</sprite>
+      <sprite>sprites\spr_bad11</sprite>
+      <sprite>sprites\spr_bad12</sprite>
+      <sprite>sprites\spr_bad13</sprite>
+      <sprite>sprites\spr_bad_13orb</sprite>
+      <sprite>sprites\spr_bad_14</sprite>
+      <sprite>sprites\spr_bad15</sprite>
+      <sprite>sprites\spr_bad16</sprite>
+      <sprite>sprites\spr_bad17</sprite>
+      <sprite>sprites\spr_bad18</sprite>
+      <sprites name="Attacks">
+        <sprite>sprites\spr_enemyMask</sprite>
+        <sprite>sprites\attack</sprite>
+        <sprite>sprites\spr_badbullet</sprite>
+        <sprite>sprites\spr_bad3c_bullet</sprite>
+        <sprite>sprites\spr_bad3_reveal</sprite>
+        <sprite>sprites\spr_bad3_attack</sprite>
+        <sprite>sprites\spr_shield</sprite>
+        <sprite>sprites\spr_bad3b_attack</sprite>
+        <sprite>sprites\spr_bad6_bullet</sprite>
+        <sprite>sprites\spr_bad7_attaqck</sprite>
+        <sprite>sprites\spr_bad9_slow</sprite>
+        <sprite>sprites\spr_bad12_attack</sprite>
+        <sprite>sprites\spr_bad12_seed</sprite>
+        <sprite>sprites\spr_fire</sprite>
+        <sprite>sprites\spr_bad14_shield</sprite>
+        <sprite>sprites\spr_bad15_bullet</sprite>
+        <sprite>sprites\spr_bad15_attack</sprite>
+        <sprite>sprites\spr_bad16_attack</sprite>
+        <sprite>sprites\spr_bad17_attack</sprite>
+        <sprite>sprites\spr_bad18_bullet</sprite>
+        <sprite>sprites\spr_bad18_attack</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="UI">
+      <sprite>sprites\spr_playerui</sprite>
+      <sprite>sprites\spr_playeruiShield1</sprite>
+      <sprite>sprites\spr_playeruiShield2</sprite>
+      <sprite>sprites\spr_playeruiShield4</sprite>
+      <sprite>sprites\spr_playeruiShield3</sprite>
+      <sprite>sprites\spr_playeruiShield5</sprite>
+      <sprite>sprites\spr_playeruiitem</sprite>
+      <sprite>sprites\spr_keyCoinUI</sprite>
+      <sprite>sprites\spr_consumeUI</sprite>
+      <sprite>sprites\spr_crosshair</sprite>
+      <sprite>sprites\spr_ammo_counter</sprite>
+      <sprite>sprites\spr_killCount</sprite>
+      <sprite>sprites\spr_sideUIArmor1</sprite>
+      <sprite>sprites\spr_sideUIArmor3</sprite>
+      <sprite>sprites\spr_sideUIArmor5</sprite>
+      <sprite>sprites\spr_dottedOLD</sprite>
+      <sprite>sprites\spr_dotted</sprite>
+      <sprite>sprites\spr_statsUI</sprite>
+      <sprite>sprites\spr_button_prompt</sprite>
+      <sprite>sprites\spr_player1_target</sprite>
+      <sprite>sprites\spr_menu_button</sprite>
+      <sprite>sprites\spr_mp_score</sprite>
+      <sprite>sprites\spr_pause</sprite>
+      <sprite>sprites\spr_level_name_UI</sprite>
+      <sprites name="Map">
+        <sprite>sprites\spr_map</sprite>
+        <sprite>sprites\spr_map_color</sprite>
+        <sprite>sprites\spr_map_type</sprite>
+        <sprite>sprites\spr_map_marker</sprite>
+        <sprite>sprites\spr_room_type_collision</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\spr_key</sprite>
+      <sprite>sprites\spr_health_orb</sprite>
+      <sprite>sprites\spr_coin</sprite>
+      <sprite>sprites\spr_triple_shield</sprite>
+      <sprite>sprites\spr_shield_marker</sprite>
+      <sprites name="Consumable">
+        <sprite>sprites\spr_smallPotion</sprite>
+        <sprite>sprites\spr_weakPotion</sprite>
+        <sprite>sprites\spr_taintedPotion</sprite>
+        <sprite>sprites\spr_unlimitedAmmo</sprite>
+        <sprite>sprites\spr_invulnerable</sprite>
+        <sprite>sprites\spr_nuke</sprite>
+        <sprite>sprites\spr_enemySlow</sprite>
+        <sprite>sprites\spr_damageField</sprite>
+        <sprite>sprites\spr_enemyDamageField</sprite>
+        <sprite>sprites\spr_fuckYou</sprite>
+        <sprite>sprites\spr_ammoBring</sprite>
+        <sprite>sprites\spr_killRandom</sprite>
+        <sprite>sprites\spr_yellowCoin</sprite>
+        <sprite>sprites\spr_quad</sprite>
+      </sprites>
+      <sprites name="Upgrades">
+        <sprite>sprites\spr_item</sprite>
+        <sprite>sprites\spr_health_max</sprite>
+        <sprite>sprites\spr_health</sprite>
+        <sprite>sprites\spr_health_orb_item</sprite>
+        <sprite>sprites\spr_shield_fill</sprite>
+        <sprite>sprites\spr_shield_add</sprite>
+        <sprite>sprites\spr_damage_resist</sprite>
+        <sprite>sprites\spr_move_speed</sprite>
+        <sprite>sprites\spr_respawn_time</sprite>
+        <sprite>sprites\spr_coin_rate</sprite>
+        <sprite>sprites\spr_discount</sprite>
+        <sprite>sprites\spr_barrel_item</sprite>
+        <sprite>sprites\spr_green_fire_rate</sprite>
+        <sprite>sprites\spr_blue_fire_rate</sprite>
+        <sprite>sprites\spr_yellow_fire_rate</sprite>
+        <sprite>sprites\spr_red_damage</sprite>
+        <sprite>sprites\spr_green_damage</sprite>
+        <sprite>sprites\spr_yellow_damage</sprite>
+        <sprite>sprites\spr_red_secondary_damage</sprite>
+        <sprite>sprites\spr_green_secondary_damage</sprite>
+        <sprite>sprites\spr_blue_secondary_damage</sprite>
+        <sprite>sprites\spr_yellow_secondary_damage</sprite>
+        <sprite>sprites\spr_red_pierce</sprite>
+        <sprite>sprites\spr_blue_pierce</sprite>
+        <sprite>sprites\spr_yellow_pierce</sprite>
+        <sprite>sprites\spr_red_bounce</sprite>
+        <sprite>sprites\spr_green_bounce</sprite>
+        <sprite>sprites\spr_blue_bounce</sprite>
+        <sprite>sprites\spr_red_ammo</sprite>
+        <sprite>sprites\spr_green_ammo</sprite>
+        <sprite>sprites\spr_blue_ammo</sprite>
+        <sprite>sprites\spr_yellow_ammo</sprite>
+        <sprite>sprites\spr_red_radius</sprite>
+        <sprite>sprites\spr_red_jump</sprite>
+        <sprite>sprites\spr_green_wall</sprite>
+        <sprite>sprites\spr_green_burst</sprite>
+        <sprite>sprites\spr_blue_halt</sprite>
+        <sprite>sprites\spr_blue_cross</sprite>
+        <sprite>sprites\spr_yellow_seven</sprite>
+        <sprite>sprites\spr_yellow_narrow</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\sprite182</sprite>
+    <sprite>sprites\spr_level_macro</sprite>
+    <sprite>sprites\spr_macro_test</sprite>
+    <sprite>sprites\sprite201</sprite>
+    <sprite>sprites\spr_room_blockout</sprite>
+    <sprite>sprites\spr_store_blockout</sprite>
+    <sprite>sprites\spr_end_blockout</sprite>
+    <sprite>sprites\spr_start_blockout</sprite>
+    <sprite>sprites\sprite218</sprite>
+    <sprite>sprites\sprite219</sprite>
+    <sprite>sprites\spr_misc_blockout1</sprite>
+    <sprite>sprites\spr_misc_blockout2</sprite>
+    <sprite>sprites\spr_misc_blockout3</sprite>
+    <sprite>sprites\spr_empty_blockout</sprite>
+    <sprite>sprites\spr_vert_wall</sprite>
+    <sprite>sprites\spr_hor_wall</sprite>
+    <sprite>sprites\spr_wall_corner</sprite>
+    <sprite>sprites\monstersReference</sprite>
+    <sprite>sprites\spr_spike</sprite>
+    <sprite>sprites\sprite221</sprite>
+    <sprite>sprites\sprite222</sprite>
+    <sprite>sprites\sprite223</sprite>
+    <sprite>sprites\sprite224</sprite>
+    <sprite>sprites\sprite225</sprite>
+    <sprite>sprites\spr_pixelG</sprite>
+    <sprite>sprites\spr_pixelB</sprite>
+    <sprite>sprites\spr_pixelY</sprite>
+    <sprite>sprites\spr_pixelR</sprite>
+    <sprite>sprites\spr_pixelBlood</sprite>
+    <sprite>sprites\spr_pixelG2</sprite>
+    <sprite>sprites\sprite231</sprite>
+    <sprite>sprites\monsters2x</sprite>
+    <sprite>sprites\monsters3x</sprite>
+    <sprite>sprites\sprite238</sprite>
+    <sprite>sprites\spr_bloodEffect</sprite>
+    <sprite>sprites\spr_bone</sprite>
+    <sprite>sprites\spr_skull</sprite>
+    <sprite>sprites\sprite243</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+    <background>background\back_level1</background>
+    <background>background\back_level2</background>
+    <background>background\back_level3</background>
+    <background>background\back_level4</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="Old">
+      <script>scripts\collision_normal.gml</script>
+      <script>scripts\collision_line_first.gml</script>
+      <script>scripts\scr_raycast.gml</script>
+      <script>scripts\intercept_course.gml</script>
+      <script>scripts\aiplan.gml</script>
+    </scripts>
+    <scripts name="Archive">
+      <script>scripts\melee_choose_player.gml</script>
+      <script>scripts\enemy_melee_attack.gml</script>
+      <script>scripts\scr_arena_create.gml</script>
+      <script>scripts\is_possible.gml</script>
+      <script>scripts\door_block_generate_hor.gml</script>
+      <script>scripts\fight_config.gml</script>
+      <script>scripts\itemVibration.gml</script>
+      <script>scripts\statFontColor.gml</script>
+      <script>scripts\buyItem.gml</script>
+      <script>scripts\genCreatePairList.gml</script>
+      <script>scripts\instance_nth_nearest.gml</script>
+      <script>scripts\addListToList.gml</script>
+    </scripts>
     <script>scripts\toZero.gml</script>
     <script>scripts\getInput.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+    <font>fonts\mono10</font>
+    <font>fonts\mono16</font>
+    <font>fonts\mono20</font>
+    <font>fonts\mono22</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\obj_game_start</object>
+    <object>objects\obj_gameStart</object>
     <objects name="Player">
       <object>objects\obj_player</object>
     </objects>
-    <objects name="Environment">
+    <objects name="World">
       <object>objects\obj_solid</object>
       <object>objects\obj_wall</object>
     </objects>
+    <objects name="Archive">
+      <objects name="Controls">
+        <object>objects\arc_obj_game_start</object>
+        <object>objects\arc_obj_level_control</object>
+        <object>objects\arc_obj_level_write</object>
+        <object>objects\arc_obj_floor_generation</object>
+        <object>objects\arc_obj_room_generation</object>
+        <object>objects\arc_obj_camera</object>
+      </objects>
+      <objects name="Player">
+        <object>objects\arc_obj_player_parent</object>
+        <object>objects\arc_obj_player1</object>
+        <object>objects\arc_obj_player2</object>
+        <object>objects\arc_obj_player1_corpse</object>
+        <object>objects\arc_obj_player2_corpse</object>
+        <objects name="Guns">
+          <object>objects\arc_obj_player_bullet</object>
+          <object>objects\arc_obj_greenParticles</object>
+          <object>objects\arc_obj_redParticles</object>
+          <object>objects\arc_obj_yellowParticles</object>
+          <object>objects\arc_obj_blueParticles</object>
+          <object>objects\arc_obj_blood_particles</object>
+          <object>objects\arc_obj_rbullet</object>
+          <object>objects\arc_obj_rbulletWall</object>
+          <object>objects\arc_obj_mbullet</object>
+          <object>objects\arc_obj_sbullet</object>
+          <object>objects\arc_obj_gbullet</object>
+          <object>objects\arc_obj_gexplosion_damage</object>
+          <object>objects\arc_obj_wbullet</object>
+          <object>objects\arc_obj_purple_orb</object>
+          <object>objects\arc_obj_purple_laser</object>
+        </objects>
+      </objects>
+      <objects name="Environment">
+        <objects name="Level">
+          <object>objects\arc_obj_wall</object>
+          <object>objects\arc_obj_portal</object>
+          <object>objects\arc_obj_portal_hor</object>
+          <object>objects\arc_obj_jumpPad</object>
+          <objects name="Pits">
+            <object>objects\arc_obj_pit</object>
+            <object>objects\arc_obj_pit2</object>
+            <object>objects\arc_obj_pit3</object>
+            <object>objects\arc_obj_pit4</object>
+          </objects>
+          <objects name="Sandstorm">
+            <object>objects\arc_obj_wind_particle</object>
+            <object>objects\arc_obj_wind_controller</object>
+            <object>objects\arc_obj_sandstorm_controller</object>
+            <object>objects\arc_obj_sandstorm</object>
+            <object>objects\arc_obj_sandstorm1</object>
+            <object>objects\arc_obj_sandstorm2</object>
+            <object>objects\arc_obj_sandstorm3</object>
+            <object>objects\arc_obj_sandstorm4</object>
+          </objects>
+          <objects name="Thorns">
+            <object>objects\arc_obj_thorns_controller</object>
+            <object>objects\arc_obj_thorns</object>
+            <object>objects\arc_obj_thorns_destroyed</object>
+            <object>objects\arc_obj_thorns21</object>
+            <object>objects\arc_obj_thorns31</object>
+            <object>objects\arc_obj_thorns12</object>
+            <object>objects\arc_obj_thorns13</object>
+          </objects>
+          <objects name="Hedges">
+            <object>objects\arc_obj_hedge_controller</object>
+            <object>objects\arc_obj_hedge_down</object>
+            <object>objects\arc_obj_hedge</object>
+            <object>objects\arc_obj_hedge_downA</object>
+            <object>objects\arc_obj_hedge_downB</object>
+            <object>objects\arc_obj_hedgeA</object>
+            <object>objects\arc_obj_hedgeB</object>
+          </objects>
+        </objects>
+        <objects name="Markers">
+          <object>objects\arc_obj_lootPoint</object>
+          <object>objects\arc_obj_baddiepoint</object>
+          <object>objects\arc_obj_baddie_spawner</object>
+        </objects>
+        <objects name="Editor">
+          <objects name="Entrances">
+            <objects name="Alt">
+              <object>objects\arc_obj_entrance1alt</object>
+              <object>objects\arc_obj_entrance2alt</object>
+              <object>objects\arc_obj_entrance3alt</object>
+              <object>objects\arc_obj_entrance4alt</object>
+            </objects>
+            <object>objects\obj_entrance1</object>
+            <object>objects\obj_entrance2</object>
+            <object>objects\obj_entrance3</object>
+            <object>objects\obj_entrance4</object>
+            <object>objects\obj_door_lock</object>
+          </objects>
+          <object>objects\arc_obj_start_plate1</object>
+          <object>objects\arc_obj_room_type</object>
+          <object>objects\arc_obj_room_cap_hor</object>
+          <object>objects\arc_obj_room_cap_vert</object>
+        </objects>
+        <objects name="Rooms">
+          <objects name="Ammo">
+            <object>objects\arc_obj_sp_global_ammo</object>
+            <object>objects\arc_obj_sp_ammo</object>
+          </objects>
+          <object>objects\arc_obj_health_orb_pickup</object>
+          <object>objects\arc_obj_shield_marker</object>
+          <object>objects\arc_obj_explosive_barrel</object>
+          <object>objects\arc_obj_barrel</object>
+          <object>objects\arc_obj_spike_barrel</object>
+          <object>objects\arc_obj_box</object>
+          <object>objects\arc_obj_box_stay</object>
+          <object>objects\arc_obj_crate</object>
+          <object>objects\arc_obj_misc_pad_random</object>
+          <object>objects\arc_obj_finish</object>
+          <object>objects\arc_obj_door</object>
+          <object>objects\arc_obj_statue</object>
+          <object>objects\arc_obj_statue_area</object>
+        </objects>
+        <objects name="Other">
+          <object>objects\arc_obj_solid</object>
+          <object>objects\arc_obj_dirt</object>
+          <object>objects\arc_obj_door_block</object>
+          <object>objects\arc_obj_door_lock_open</object>
+          <object>objects\arc_obj_door_block_hor</object>
+          <object>objects\arc_obj_door_block_vert</object>
+          <object>objects\arc_obj_barrelWood</object>
+          <object>objects\arc_obj_eBarrelWood</object>
+          <object>objects\arc_obj_mBarrelWood</object>
+          <object>objects\arc_obj_cap_destroy_hor</object>
+          <object>objects\arc_obj_cap_destroy_vert</object>
+          <object>objects\arc_obj_barrel_explosion</object>
+          <object>objects\arc_obj_spike</object>
+        </objects>
+      </objects>
+      <objects name="Enemies">
+        <object>objects\arc_obj_bad1</object>
+        <object>objects\arc_obj_bad1b</object>
+        <object>objects\arc_obj_bad2</object>
+        <object>objects\arc_obj_bad2mini</object>
+        <object>objects\arc_obj_bad2b</object>
+        <object>objects\arc_obj_bad3</object>
+        <object>objects\arc_obj_bad3b</object>
+        <object>objects\arc_obj_bad3c</object>
+        <object>objects\arc_obj_bad4</object>
+        <object>objects\arc_obj_bad5</object>
+        <object>objects\arc_obj_bad6</object>
+        <object>objects\arc_obj_bad7</object>
+        <object>objects\arc_obj_bad8</object>
+        <object>objects\arc_obj_bad9</object>
+        <object>objects\arc_obj_bad10</object>
+        <object>objects\arc_obj_bad11</object>
+        <object>objects\arc_obj_bad12</object>
+        <object>objects\arc_obj_bad13</object>
+        <object>objects\arc_obj_bad13_orb</object>
+        <object>objects\arc_obj_bad14</object>
+        <object>objects\arc_obj_bad15</object>
+        <object>objects\arc_obj_bad16</object>
+        <object>objects\arc_obj_bad17</object>
+        <object>objects\arc_obj_bad18</object>
+        <objects name="Objects">
+          <object>objects\arc_obj_baddie</object>
+          <object>objects\arc_obj_ai_planner</object>
+          <objects name="AI">
+            <object>objects\arc_obj_baddie_pointPlayer</object>
+            <object>objects\arc_obj_baddie_point</object>
+            <object>objects\arc_obj_baddie_player</object>
+            <object>objects\arc_obj_baddie_still</object>
+          </objects>
+          <objects name="Attacks">
+            <object>objects\arc_obj_enemy_melee</object>
+            <object>objects\arc_obj_bad3_reveal</object>
+            <object>objects\arc_obj_bad3_attack</object>
+            <object>objects\arc_obj_bad3b_attack</object>
+            <object>objects\arc_obj_bad4_bullet</object>
+            <object>objects\arc_obj_bad6_bullet</object>
+            <object>objects\arc_obj_bad7_attack</object>
+            <object>objects\arc_obj_bad3c_bullet</object>
+            <object>objects\arc_obj_bad5shield</object>
+            <object>objects\arc_obj_9bad_slow</object>
+            <object>objects\arc_obj_fire</object>
+            <object>objects\arc_obj_bad12_seed</object>
+            <object>objects\arc_obj_bad12_attack</object>
+            <object>objects\arc_obj_bad14_shield</object>
+            <object>objects\arc_obj_chargePoint</object>
+            <object>objects\arc_obj_bad15_bullet</object>
+            <object>objects\arc_obj_bad15_aoe</object>
+            <object>objects\arc_obj_bad16_attack</object>
+            <object>objects\arc_obj_bad17_attack</object>
+            <object>objects\arc_obj_bad18_bullet</object>
+            <object>objects\arc_obj_bad18_aoe</object>
+          </objects>
+        </objects>
+        <objects name="Big">
+          <object>objects\arc_obj_bad1_big</object>
+          <object>objects\arc_obj_bad2_big</object>
+          <object>objects\arc_obj_bad3_big</object>
+          <object>objects\arc_obj_bad3b_big</object>
+          <object>objects\arc_obj_bad4_big</object>
+          <object>objects\arc_obj_bad10_big</object>
+          <object>objects\arc_obj_bad12_big</object>
+        </objects>
+      </objects>
+      <objects name="UI">
+        <object>objects\arc_obj_ammo_ui_parent</object>
+        <object>objects\arc_obj_player1_hud</object>
+        <object>objects\arc_obj_player2_hud</object>
+        <objects name="Menu">
+          <object>objects\arc_obj_menu_singleplayer</object>
+          <object>objects\arc_obj_menu_coop</object>
+          <object>objects\arc_obj_menu_versus</object>
+          <object>objects\arc_obj_casual</object>
+          <object>objects\arc_obj_experianced</object>
+          <object>objects\arc_obj_standard</object>
+          <object>objects\arc_obj_adept</object>
+          <object>objects\arc_obj_inhuman</object>
+          <object>objects\arc_obj_normal</object>
+          <object>objects\arc_obj_advanced</object>
+        </objects>
+        <objects name="MiniMap">
+          <object>objects\arc_obj_hall</object>
+          <object>objects\arc_obj_room_type_collision</object>
+        </objects>
+      </objects>
+      <objects name="Items">
+        <object>objects\arc_obj_key</object>
+        <object>objects\arc_obj_consume</object>
+        <object>objects\arc_obj_item</object>
+        <object>objects\arc_obj_weaponItem</object>
+        <object>objects\arc_obj_otherItem</object>
+        <object>objects\arc_obj_anyItem</object>
+        <object>objects\arc_obj_minorItem</object>
+        <object>objects\arc_obj_minorWeapon</object>
+        <object>objects\arc_obj_minorWeapon2</object>
+        <object>objects\arc_obj_damageField</object>
+        <object>objects\arc_obj_coin</object>
+        <object>objects\arc_obj_health_orb</object>
+        <object>objects\arc_obj_kickable</object>
+        <object>objects\arc_obj_blood_effect</object>
+        <object>objects\arc_obj_bone</object>
+        <object>objects\arc_obj_skull</object>
+      </objects>
+      <objects name="MP">
+        <object>objects\arc_obj_mp_ammo</object>
+        <object>objects\arc_obj_mp_shield</object>
+        <object>objects\arc_obj_mp_triShield</object>
+        <object>objects\arc_obj_mp_health</object>
+        <object>objects\arc_obj_mp_mega</object>
+        <object>objects\arc_obj_pvp_score</object>
+        <object>objects\arc_obj_pvp_countdown</object>
+        <object>objects\arc_obj_mp_spawn</object>
+        <object>objects\arc_bj_mp_minor</object>
+        <object>objects\arc_obj_mp_weaponMinor</object>
+        <object>objects\arc_obj_mp_weaponMajor</object>
+        <object>objects\arc_obj_mp_item</object>
+      </objects>
+      <objects name="Level Generator">
+        <object>objects\arc_obj_floor_generation_new</object>
+        <object>objects\arc_obj_arena_blockout</object>
+        <object>objects\arc_obj_store_blockout</object>
+        <object>objects\arc_obj_start_blockout</object>
+        <object>objects\arc_obj_consume_blockout</object>
+        <object>objects\arc_obj_alter_blockout</object>
+        <object>objects\arc_obj_end_blockout</object>
+        <object>objects\arc_obj_misc_blockout1</object>
+        <object>objects\arc_obj_misc_blockout3</object>
+        <object>objects\arc_obj_misc_blockout2</object>
+        <object>objects\arc_obj_empty_blockout</object>
+        <object>objects\arc_obj_level_macro</object>
+        <object>objects\arc_obj_hor_wall</object>
+        <object>objects\arc_obj_wall_corner</object>
+        <object>objects\arc_obj_gen_wall</object>
+        <object>objects\arc_obj_vert_wall</object>
+        <object>objects\arc_obj_pair</object>
+        <object>objects\arc_obj_gen_room</object>
+        <object>objects\arc_obj_misc_room</object>
+        <object>objects\arc_obj_gen_navpoint</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_start</room>
-    <room>rooms\obj_rm_test</room>
+    <room>rooms\rm_game_start</room>
+    <room>rooms\rm_test</room>
+    <rooms name="Archive">
+      <rooms name="Rooms">
+        <rooms name="Required">
+          <room>rooms\arc_leave</room>
+          <room>rooms\arc_start</room>
+          <room>rooms\arc_shop1</room>
+          <room>rooms\arc_shop2</room>
+          <room>rooms\arc_shop3</room>
+          <room>rooms\arc_consumables</room>
+          <room>rooms\arc_altar</room>
+        </rooms>
+        <rooms name="Misc">
+          <rooms name="Hor">
+            <room>rooms\arc_misc_hor_template</room>
+            <room>rooms\arc_misc_hor_generic1</room>
+            <room>rooms\arc_misc_hor_generic2</room>
+          </rooms>
+          <rooms name="Vert">
+            <room>rooms\arc_misc_vert_template</room>
+            <room>rooms\arc_misc_vert_generic1</room>
+          </rooms>
+          <rooms name="Square">
+            <room>rooms\arc_misc_square_template</room>
+            <room>rooms\arc_misc_square_generic1</room>
+          </rooms>
+        </rooms>
+        <rooms name="Single">
+          <rooms name="Hybrid">
+            <room>rooms\misc_single_hybrid1</room>
+            <room>rooms\misc_single_hybrid2</room>
+            <room>rooms\misc_single_hybrid3</room>
+            <room>rooms\misc_single_hybrid4</room>
+            <room>rooms\misc_single_hybrid5</room>
+            <room>rooms\misc_single_hybrid6</room>
+            <room>rooms\misc_single_hybrid7</room>
+            <room>rooms\misc_single_hybrid8</room>
+            <room>rooms\misc_single_hybrid9</room>
+            <room>rooms\misc_single_hybrid10</room>
+            <room>rooms\misc_single_hybrid11</room>
+            <room>rooms\misc_single_hybrid12</room>
+            <room>rooms\misc_single_hybrid13</room>
+            <room>rooms\misc_single_hybrid14</room>
+            <room>rooms\misc_single_hybrid15</room>
+            <room>rooms\misc_single_hybrid16</room>
+            <room>rooms\misc_single_hybrid17</room>
+            <room>rooms\misc_single_hybrid18</room>
+            <room>rooms\misc_single_hybrid19</room>
+          </rooms>
+          <rooms name="Closed">
+            <room>rooms\misc_single_closed1</room>
+            <room>rooms\misc_single_closed2</room>
+            <room>rooms\misc_single_closed3</room>
+            <room>rooms\misc_single_closed4</room>
+            <room>rooms\misc_single_closed5</room>
+            <room>rooms\misc_single_closed6</room>
+            <room>rooms\misc_single_closed7</room>
+            <room>rooms\misc_single_closed8</room>
+            <room>rooms\misc_single_closed9</room>
+            <room>rooms\misc_single_closed10</room>
+          </rooms>
+          <rooms name="Deadend">
+            <room>rooms\misc_single_deadend1</room>
+            <room>rooms\misc_single_deadend2</room>
+          </rooms>
+          <room>rooms\misc_single_template</room>
+        </rooms>
+        <rooms name="Old">
+          <room>rooms\arc_rm_item</room>
+          <room>rooms\arc_rm_barrels</room>
+          <room>rooms\arc_rm_consume</room>
+          <room>rooms\arc_rm_boxes</room>
+          <room>rooms\arc_rm_statue</room>
+          <room>rooms\arc_rm_discount</room>
+        </rooms>
+      </rooms>
+      <rooms name="Arenas">
+        <room>rooms\arena_empty</room>
+        <room>rooms\arena_nothing</room>
+        <rooms name="Floor 1">
+          <room>rooms\arena1_1</room>
+          <room>rooms\arena1_2</room>
+          <room>rooms\arena1_3</room>
+          <room>rooms\arena1_4</room>
+          <room>rooms\arena1_5</room>
+          <room>rooms\arena1_6</room>
+          <room>rooms\arena1_1g</room>
+          <room>rooms\arena1_2g</room>
+          <room>rooms\arena1_3g</room>
+          <room>rooms\arena1_4g</room>
+          <room>rooms\arena1_5g</room>
+          <room>rooms\arena1_6g</room>
+        </rooms>
+        <rooms name="Floor 2">
+          <room>rooms\arena2_1</room>
+          <room>rooms\arena2_2</room>
+          <room>rooms\arena2_3</room>
+          <room>rooms\arena2_4</room>
+          <room>rooms\arena2_5</room>
+          <room>rooms\arena2_6</room>
+          <room>rooms\arena2_1g</room>
+          <room>rooms\arena2_2g</room>
+          <room>rooms\arena2_3g</room>
+          <room>rooms\arena2_4g</room>
+          <room>rooms\arena2_5g</room>
+          <room>rooms\arena2_6g</room>
+        </rooms>
+        <rooms name="Floor 3">
+          <room>rooms\arena3_1</room>
+          <room>rooms\arena3_2</room>
+          <room>rooms\arena3_3</room>
+          <room>rooms\arena4_1</room>
+          <room>rooms\arena4_X</room>
+          <room>rooms\arena3_X</room>
+        </rooms>
+        <rooms name="Archive">
+          <room>rooms\arena2b</room>
+          <room>rooms\rm_floor2</room>
+        </rooms>
+      </rooms>
+      <room>rooms\arc_arena_test</room>
+      <room>rooms\arc_rm_floor</room>
+      <room>rooms\arc_rm_mp1</room>
+      <room>rooms\arc_rm_hardcore</room>
+      <room>rooms\arc_rm_difficulty</room>
+      <room>rooms\arc_rm_menu</room>
+      <room>rooms\arc_rm_gamestart</room>
+    </rooms>
   </rooms>
+  <constants number="6">
+    <constant name="WWHITE">5</constant>
+    <constant name="sec">144</constant>
+    <constant name="WGREEN">1</constant>
+    <constant name="WBLUE">2</constant>
+    <constant name="WYELLOW">3</constant>
+    <constant name="WRED">4</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

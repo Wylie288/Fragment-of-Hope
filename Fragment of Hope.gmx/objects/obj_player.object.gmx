@@ -25,13 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Init
-horInput = 0
-vertInput = 0
-moveHor = 0
-moveVert = 0
-xSpeed = 0
-ySpeed = 0
+            <string>///Variables
+///Variables
+//Move
+baseSpeed = 3.5
+baseAccel = 0.5
+baseDeAccel = 0.5
 </string>
           </argument>
         </arguments>
@@ -52,13 +51,16 @@ ySpeed = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Variables
-//Move
-moveSpeed = 3.5
-moveAccel = 0.5
-moveDeAccel = 0.5
+            <string>///Init
+image_speed = 0
 
-
+inputHor = 0
+inputVert = 0
+moveHor = 0
+moveVert = 0
+moveSpeed = baseSpeed
+xSpeed = 0
+ySpeed = 0
 </string>
           </argument>
         </arguments>
@@ -84,11 +86,11 @@ moveDeAccel = 0.5
             <string>///Input
 if global.input = "kbm"
 {
-    horInputRaw = -getInput(global.b_left) + getInput(global.b_right)
-    vertInputRaw = -getInput(global.b_up) + getInput(global.b_down)
+    inputRawHor = -getInput(global.b_left) + getInput(global.b_right)
+    inputRawVert = -getInput(global.b_up) + getInput(global.b_down)
     
-    tempDir = point_direction(0, 0, horInputRaw, vertInputRaw)
-    tempSpeed = max(abs(horInputRaw), abs(vertInputRaw))
+    tempDir = point_direction(0, 0, inputRawHor, inputRawVert)
+    tempSpeed = max(abs(inputRawHor), abs(inputRawVert))
     
     inputHor = lengthdir_x(tempSpeed, tempDir)
     inputVert = lengthdir_y(tempSpeed, tempDir)
@@ -113,18 +115,28 @@ if global.input = "kbm"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Acceleration
-if inputHor != 0
-    moveHor += sign(inputHor) * moveAccel
-else
-    moveHor = toZero(moveHor, moveDeAccel)
-moveHor = clamp(moveHor, -moveSpeed, moveSpeed)
+            <string>///Movement Acceleration
+allowAccel = false
 
-if inputVert != 0
-    moveVert += sign(inputVert) * moveAccel
+if allowAccel
+{
+    if inputHor != 0
+        moveHor += sign(inputHor) * baseAccel
+    else
+        moveHor = toZero(moveHor, baseDeAccel)
+    moveHor = clamp(moveHor, -baseSpeed, baseSpeed)
+    
+    if inputVert != 0
+        moveVert += sign(inputVert) * baseAccel
+    else
+        moveVert = toZero(moveVert, baseDeAccel)
+    moveVert = clamp(moveVert, -baseSpeed, baseSpeed)
+}
 else
-    moveVert = toZero(moveVert, moveDeAccel)
-moveVert = clamp(moveVert, -moveSpeed, moveSpeed)
+{
+    moveHor = inputHor * moveSpeed 
+    moveVert = inputVert * moveSpeed 
+}
 </string>
           </argument>
         </arguments>
@@ -169,20 +181,21 @@ ySpeed = moveVert
           <argument>
             <kind>1</kind>
             <string>///Move
+var allowCornerCut = false
 var corner = 0
 var cornerSize = 16
-var it = 1
+var iterate = 1
 
 
 if !place_meeting(x+xSpeed, y, obj_solid)
     x += xSpeed
-else
+else 
 {
     //Corner
-    if !place_meeting(x+xSpeed, y+cornerSize, obj_solid) or !place_meeting(x+xSpeed, y-cornerSize, obj_solid)
+    if (!place_meeting(x+xSpeed, y+cornerSize, obj_solid) or !place_meeting(x+xSpeed, y-cornerSize, obj_solid)) and allowCornerCut
     {
-        i = it
-        repeat((cornerSize/it) - 1)
+        i = iterate
+        repeat((cornerSize/iterate) - 1)
         {
             if !place_meeting(x+xSpeed, y+i, obj_solid)
             {
@@ -198,7 +211,7 @@ else
                 corner = 1
                 break
             }
-            i += it
+            i += iterate
         }
     }
     
@@ -212,13 +225,13 @@ else
 
 if !place_meeting(x, y+ySpeed, obj_solid)
     y += ySpeed
-else
+else if allowCornerCut
 {   
     ///Corner
-    if !place_meeting(x+10, y+ySpeed, obj_solid) or !place_meeting(x-10, y+ySpeed, obj_solid)
+    if (!place_meeting(x+cornerSize, y+ySpeed, obj_solid) or !place_meeting(x-cornerSize, y+ySpeed, obj_solid)) and allowCornerCut
     {
-        i = it
-        repeat((cornerSize/it) - 1)
+        i = iterate
+        repeat((cornerSize/iterate) - 1)
         {
             if !place_meeting(x+i, y+ySpeed, obj_solid)
             {
@@ -234,7 +247,7 @@ else
                 corner = 1
                 break
             }
-            i += it
+            i += iterate
         }
     }
     
