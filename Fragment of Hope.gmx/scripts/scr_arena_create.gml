@@ -4,10 +4,13 @@ x = argument0
 y = argument1
 arena = argument2
 
-if file_exists(arena)
-    global.textFile = file_text_open_read(arena)
+if file_exists("levelData/"+arena)
+    global.textFile = file_text_open_read("levelData/"+arena)
 else
+{
     return false
+    show_debug_message("Level not Found")
+}
     
 while(!file_text_eof(global.textFile))
 {
@@ -16,7 +19,6 @@ while(!file_text_eof(global.textFile))
     
     switch (line)
     {
-        case "plate1": acXY(obj_start_plate1, x, y); break;
         case "lootPoint": acXY(obj_lootPoint, x, y); break;
         case "wall": acXY(obj_wall, x, y); break;
         case "lock": acXY(obj_door_lock, x, y); break;
@@ -73,6 +75,7 @@ while(!file_text_eof(global.textFile))
         case "anyItem": acItem(obj_anyItem, x, y); break;
         case "type": acType(obj_room_type); break;
         case "ammo": acCrate(obj_sp_ammo, x, y); break;
+        case "plate1": acStartPlate(obj_start_plate1, x, y, arena); break;
     }
      
 }
@@ -225,4 +228,21 @@ with instance_create(iX + jX, iY + jY, obj_portal_hor)
     xDest = other.xDest
     yDest = other.yDest
     parent = other.id
+}
+#define acStartPlate
+object = argument0
+iX = argument1
+iY = argument2
+arenaFile = argument3
+
+jX = file_text_read_real(global.textFile)
+file_text_readln(global.textFile)
+
+jY = file_text_read_real(global.textFile)
+file_text_readln(global.textFile)
+
+with instance_create(iX + jX, iY + jY, object)
+{
+    parent = other.id
+    arena = other.arenaFile
 }

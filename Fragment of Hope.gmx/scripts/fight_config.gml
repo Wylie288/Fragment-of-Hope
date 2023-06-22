@@ -4,47 +4,13 @@ badTypes = 1
 spawnCountTime = sec * global.spawnTime
 spawnCount = sec * 2
 global.arenaLock = 1
+gridMade = 0
 
 audio_stop_sound(ambient)
 audio_play_sound(battle, 10, 0)
 
 charges = totalBad
 initialBad = maxBad
-
-global.grid = mp_grid_create(x, y, room_width/54, room_height/54, 54, 54)
-global.gridFly = mp_grid_create(x, y, room_width/54, room_height/54, 54, 54)
-
-mp_grid_add_instances(global.grid, obj_solid, false)
-mp_grid_add_instances(global.gridFly, obj_wall, true)
-mp_grid_add_instances(global.grid, obj_door_lock, true)
-mp_grid_add_instances(global.gridFly, obj_door_lock, true)
-mp_grid_add_instances(global.grid, obj_door_lock_open, true)
-mp_grid_add_instances(global.gridFly, obj_door_lock_open, true)
-
-with(obj_thorns21)
-{
-    mp_grid_clear_rectangle(global.grid, x, y, x+108, y+54)
-    mp_grid_clear_rectangle(global.gridFly, x, y, x+108, y+54)
-    
-}
-with(obj_thorns31)
-{
-    mp_grid_clear_rectangle(global.grid, x, y, x+162, y+54)
-    mp_grid_clear_rectangle(global.gridFly, x, y, x+162, y+54)
-    
-}
-with(obj_thorns12)
-{
-    mp_grid_clear_rectangle(global.grid, x, y, x+54, y+108)
-    mp_grid_clear_rectangle(global.gridFly, x, y, x+54, y+108)
-    
-}
-with(obj_thorns13)
-{
-    mp_grid_clear_rectangle(global.grid, x, y, x+54, y+162)
-    mp_grid_clear_rectangle(global.gridFly, x, y, x+54, y+162)
-    
-}
 
 ///Enemy List Setup
 if maxBad <= 2 //2
@@ -280,6 +246,12 @@ instance_create(x+108, y+108, obj_player1_hud)
 #define fight_step
 if spawnerOn = 1
 {
+    if gridMade = 0 and obj_camera.inPlace = 1
+    {
+        fight_grid()
+        gridMade = 1
+    }
+    
     if instance_exists(obj_player_parent)
     {
         if instance_number(obj_baddie) < maxBad
@@ -459,9 +431,47 @@ if global.mp = 1
 //Temp Progression
 global.fight += 1
 
+obj_camera.inPlace = 0
+
 if instance_exists(obj_sandstorm)
         instance_destroy(obj_sandstorm)
 if instance_exists(obj_sandstorm_controller)
         instance_destroy(obj_sandstorm_controller)
 if instance_exists(obj_wind_controller)
         instance_destroy(obj_wind_controller)
+
+#define fight_grid
+global.grid = mp_grid_create(x, y, 1890/54, 1296/54, 54, 54)
+global.gridFly = mp_grid_create(x, y, 1890/54, 1296/54, 54, 54)
+
+mp_grid_add_instances(global.grid, obj_solid, false)
+mp_grid_add_instances(global.gridFly, obj_wall, true)
+mp_grid_add_instances(global.grid, obj_door_lock, true)
+mp_grid_add_instances(global.gridFly, obj_door_lock, true)
+mp_grid_add_instances(global.grid, obj_door_lock_open, true)
+mp_grid_add_instances(global.gridFly, obj_door_lock_open, true)
+
+with(obj_thorns21)
+{
+    mp_grid_clear_rectangle(global.grid, x, y, x+108, y+54)
+    mp_grid_clear_rectangle(global.gridFly, x, y, x+108, y+54)
+    
+}
+with(obj_thorns31)
+{
+    mp_grid_clear_rectangle(global.grid, x, y, x+162, y+54)
+    mp_grid_clear_rectangle(global.gridFly, x, y, x+162, y+54)
+    
+}
+with(obj_thorns12)
+{
+    mp_grid_clear_rectangle(global.grid, x, y, x+54, y+108)
+    mp_grid_clear_rectangle(global.gridFly, x, y, x+54, y+108)
+    
+}
+with(obj_thorns13)
+{
+    mp_grid_clear_rectangle(global.grid, x, y, x+54, y+162)
+    mp_grid_clear_rectangle(global.gridFly, x, y, x+54, y+162)
+    
+}

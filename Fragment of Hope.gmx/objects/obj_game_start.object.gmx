@@ -25,19 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Input
-global.b_up[0,0] = ord("W")
-global.b_up[0,1] = "keyboard"
-global.b_down[0,0] = ord("S")
-global.b_down[0,1] = "keyboard"
-global.b_left[0,0] = ord("A")
-global.b_left[0,1] = "keyboard"
-global.b_right[0,0] = ord("D")
-global.b_right[0,1] = "keyboard"
+            <string>randomize()
+
+debug = 0
+global.myControls = true
+
+global.level = 1
+global.hardcore = 0
+global.levelVariant = 0
+global.levelName = ""
+global.gameMode = "coop"
+global.difficulty = "standard"
+global.mp = 0
+global.titleTimer = 0
+
+global.keys = 0
+global.coins = 0
+global.coinRate = 0
+global.arenaLock = 0
+global.enemySlow = 0
+
+global.greenAmmoMax = 0
+global.blueAmmoMax = 0
+global.yellowAmmoMax = 0
+global.redAmmoMax = 0
+
+
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -54,9 +73,25 @@ global.b_right[0,1] = "keyboard"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.input = "kbm"
+            <string>global.mp = 0
 
-room_goto_next()
+global.gp = 0
+gp_num = gamepad_get_device_count()
+ for (var i = 0; i &lt; gp_num; i++;)
+    {
+        if gamepad_is_connected(i)
+            global.gp += 1
+    }
+
+gamepad_set_axis_deadzone(0, 0)
+gamepad_set_button_threshold(0, 0.15)
+gamepad_set_axis_deadzone(1, 0.0)
+gamepad_set_button_threshold(1, 0.15)
+gamepad_set_axis_deadzone(2, 0.0)
+gamepad_set_button_threshold(2, 0.15)
+
+if debug = 0
+    room_goto_next()
 </string>
           </argument>
         </arguments>

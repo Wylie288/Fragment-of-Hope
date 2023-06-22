@@ -621,369 +621,351 @@
     <font>fonts\mono22</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_gameStart</object>
+    <objects name="Controls">
+      <object>objects\obj_game_start</object>
+      <object>objects\obj_level_control</object>
+      <object>objects\obj_level_write</object>
+      <object>objects\obj_floor_generation</object>
+      <object>objects\obj_room_generation</object>
+      <object>objects\obj_camera</object>
+    </objects>
     <objects name="Player">
-      <object>objects\obj_player</object>
-    </objects>
-    <objects name="World">
-      <object>objects\obj_solid</object>
-      <object>objects\obj_wall</object>
-    </objects>
-    <objects name="Archive">
-      <objects name="Controls">
-        <object>objects\arc_obj_game_start</object>
-        <object>objects\arc_obj_level_control</object>
-        <object>objects\arc_obj_level_write</object>
-        <object>objects\arc_obj_floor_generation</object>
-        <object>objects\arc_obj_room_generation</object>
-        <object>objects\arc_obj_camera</object>
-      </objects>
-      <objects name="Player">
-        <object>objects\arc_obj_player_parent</object>
-        <object>objects\arc_obj_player1</object>
-        <object>objects\arc_obj_player2</object>
-        <object>objects\arc_obj_player1_corpse</object>
-        <object>objects\arc_obj_player2_corpse</object>
-        <objects name="Guns">
-          <object>objects\arc_obj_player_bullet</object>
-          <object>objects\arc_obj_greenParticles</object>
-          <object>objects\arc_obj_redParticles</object>
-          <object>objects\arc_obj_yellowParticles</object>
-          <object>objects\arc_obj_blueParticles</object>
-          <object>objects\arc_obj_blood_particles</object>
-          <object>objects\arc_obj_rbullet</object>
-          <object>objects\arc_obj_rbulletWall</object>
-          <object>objects\arc_obj_mbullet</object>
-          <object>objects\arc_obj_sbullet</object>
-          <object>objects\arc_obj_gbullet</object>
-          <object>objects\arc_obj_gexplosion_damage</object>
-          <object>objects\arc_obj_wbullet</object>
-          <object>objects\arc_obj_purple_orb</object>
-          <object>objects\arc_obj_purple_laser</object>
-        </objects>
-      </objects>
-      <objects name="Environment">
-        <objects name="Level">
-          <object>objects\arc_obj_wall</object>
-          <object>objects\arc_obj_portal</object>
-          <object>objects\arc_obj_portal_hor</object>
-          <object>objects\arc_obj_jumpPad</object>
-          <objects name="Pits">
-            <object>objects\arc_obj_pit</object>
-            <object>objects\arc_obj_pit2</object>
-            <object>objects\arc_obj_pit3</object>
-            <object>objects\arc_obj_pit4</object>
-          </objects>
-          <objects name="Sandstorm">
-            <object>objects\arc_obj_wind_particle</object>
-            <object>objects\arc_obj_wind_controller</object>
-            <object>objects\arc_obj_sandstorm_controller</object>
-            <object>objects\arc_obj_sandstorm</object>
-            <object>objects\arc_obj_sandstorm1</object>
-            <object>objects\arc_obj_sandstorm2</object>
-            <object>objects\arc_obj_sandstorm3</object>
-            <object>objects\arc_obj_sandstorm4</object>
-          </objects>
-          <objects name="Thorns">
-            <object>objects\arc_obj_thorns_controller</object>
-            <object>objects\arc_obj_thorns</object>
-            <object>objects\arc_obj_thorns_destroyed</object>
-            <object>objects\arc_obj_thorns21</object>
-            <object>objects\arc_obj_thorns31</object>
-            <object>objects\arc_obj_thorns12</object>
-            <object>objects\arc_obj_thorns13</object>
-          </objects>
-          <objects name="Hedges">
-            <object>objects\arc_obj_hedge_controller</object>
-            <object>objects\arc_obj_hedge_down</object>
-            <object>objects\arc_obj_hedge</object>
-            <object>objects\arc_obj_hedge_downA</object>
-            <object>objects\arc_obj_hedge_downB</object>
-            <object>objects\arc_obj_hedgeA</object>
-            <object>objects\arc_obj_hedgeB</object>
-          </objects>
-        </objects>
-        <objects name="Markers">
-          <object>objects\arc_obj_lootPoint</object>
-          <object>objects\arc_obj_baddiepoint</object>
-          <object>objects\arc_obj_baddie_spawner</object>
-        </objects>
-        <objects name="Editor">
-          <objects name="Entrances">
-            <objects name="Alt">
-              <object>objects\arc_obj_entrance1alt</object>
-              <object>objects\arc_obj_entrance2alt</object>
-              <object>objects\arc_obj_entrance3alt</object>
-              <object>objects\arc_obj_entrance4alt</object>
-            </objects>
-            <object>objects\obj_entrance1</object>
-            <object>objects\obj_entrance2</object>
-            <object>objects\obj_entrance3</object>
-            <object>objects\obj_entrance4</object>
-            <object>objects\obj_door_lock</object>
-          </objects>
-          <object>objects\arc_obj_start_plate1</object>
-          <object>objects\arc_obj_room_type</object>
-          <object>objects\arc_obj_room_cap_hor</object>
-          <object>objects\arc_obj_room_cap_vert</object>
-        </objects>
-        <objects name="Rooms">
-          <objects name="Ammo">
-            <object>objects\arc_obj_sp_global_ammo</object>
-            <object>objects\arc_obj_sp_ammo</object>
-          </objects>
-          <object>objects\arc_obj_health_orb_pickup</object>
-          <object>objects\arc_obj_shield_marker</object>
-          <object>objects\arc_obj_explosive_barrel</object>
-          <object>objects\arc_obj_barrel</object>
-          <object>objects\arc_obj_spike_barrel</object>
-          <object>objects\arc_obj_box</object>
-          <object>objects\arc_obj_box_stay</object>
-          <object>objects\arc_obj_crate</object>
-          <object>objects\arc_obj_misc_pad_random</object>
-          <object>objects\arc_obj_finish</object>
-          <object>objects\arc_obj_door</object>
-          <object>objects\arc_obj_statue</object>
-          <object>objects\arc_obj_statue_area</object>
-        </objects>
-        <objects name="Other">
-          <object>objects\arc_obj_solid</object>
-          <object>objects\arc_obj_dirt</object>
-          <object>objects\arc_obj_door_block</object>
-          <object>objects\arc_obj_door_lock_open</object>
-          <object>objects\arc_obj_door_block_hor</object>
-          <object>objects\arc_obj_door_block_vert</object>
-          <object>objects\arc_obj_barrelWood</object>
-          <object>objects\arc_obj_eBarrelWood</object>
-          <object>objects\arc_obj_mBarrelWood</object>
-          <object>objects\arc_obj_cap_destroy_hor</object>
-          <object>objects\arc_obj_cap_destroy_vert</object>
-          <object>objects\arc_obj_barrel_explosion</object>
-          <object>objects\arc_obj_spike</object>
-        </objects>
-      </objects>
-      <objects name="Enemies">
-        <object>objects\arc_obj_bad1</object>
-        <object>objects\arc_obj_bad1b</object>
-        <object>objects\arc_obj_bad2</object>
-        <object>objects\arc_obj_bad2mini</object>
-        <object>objects\arc_obj_bad2b</object>
-        <object>objects\arc_obj_bad3</object>
-        <object>objects\arc_obj_bad3b</object>
-        <object>objects\arc_obj_bad3c</object>
-        <object>objects\arc_obj_bad4</object>
-        <object>objects\arc_obj_bad5</object>
-        <object>objects\arc_obj_bad6</object>
-        <object>objects\arc_obj_bad7</object>
-        <object>objects\arc_obj_bad8</object>
-        <object>objects\arc_obj_bad9</object>
-        <object>objects\arc_obj_bad10</object>
-        <object>objects\arc_obj_bad11</object>
-        <object>objects\arc_obj_bad12</object>
-        <object>objects\arc_obj_bad13</object>
-        <object>objects\arc_obj_bad13_orb</object>
-        <object>objects\arc_obj_bad14</object>
-        <object>objects\arc_obj_bad15</object>
-        <object>objects\arc_obj_bad16</object>
-        <object>objects\arc_obj_bad17</object>
-        <object>objects\arc_obj_bad18</object>
-        <objects name="Objects">
-          <object>objects\arc_obj_baddie</object>
-          <object>objects\arc_obj_ai_planner</object>
-          <objects name="AI">
-            <object>objects\arc_obj_baddie_pointPlayer</object>
-            <object>objects\arc_obj_baddie_point</object>
-            <object>objects\arc_obj_baddie_player</object>
-            <object>objects\arc_obj_baddie_still</object>
-          </objects>
-          <objects name="Attacks">
-            <object>objects\arc_obj_enemy_melee</object>
-            <object>objects\arc_obj_bad3_reveal</object>
-            <object>objects\arc_obj_bad3_attack</object>
-            <object>objects\arc_obj_bad3b_attack</object>
-            <object>objects\arc_obj_bad4_bullet</object>
-            <object>objects\arc_obj_bad6_bullet</object>
-            <object>objects\arc_obj_bad7_attack</object>
-            <object>objects\arc_obj_bad3c_bullet</object>
-            <object>objects\arc_obj_bad5shield</object>
-            <object>objects\arc_obj_9bad_slow</object>
-            <object>objects\arc_obj_fire</object>
-            <object>objects\arc_obj_bad12_seed</object>
-            <object>objects\arc_obj_bad12_attack</object>
-            <object>objects\arc_obj_bad14_shield</object>
-            <object>objects\arc_obj_chargePoint</object>
-            <object>objects\arc_obj_bad15_bullet</object>
-            <object>objects\arc_obj_bad15_aoe</object>
-            <object>objects\arc_obj_bad16_attack</object>
-            <object>objects\arc_obj_bad17_attack</object>
-            <object>objects\arc_obj_bad18_bullet</object>
-            <object>objects\arc_obj_bad18_aoe</object>
-          </objects>
-        </objects>
-        <objects name="Big">
-          <object>objects\arc_obj_bad1_big</object>
-          <object>objects\arc_obj_bad2_big</object>
-          <object>objects\arc_obj_bad3_big</object>
-          <object>objects\arc_obj_bad3b_big</object>
-          <object>objects\arc_obj_bad4_big</object>
-          <object>objects\arc_obj_bad10_big</object>
-          <object>objects\arc_obj_bad12_big</object>
-        </objects>
-      </objects>
-      <objects name="UI">
-        <object>objects\arc_obj_ammo_ui_parent</object>
-        <object>objects\arc_obj_player1_hud</object>
-        <object>objects\arc_obj_player2_hud</object>
-        <objects name="Menu">
-          <object>objects\arc_obj_menu_singleplayer</object>
-          <object>objects\arc_obj_menu_coop</object>
-          <object>objects\arc_obj_menu_versus</object>
-          <object>objects\arc_obj_casual</object>
-          <object>objects\arc_obj_experianced</object>
-          <object>objects\arc_obj_standard</object>
-          <object>objects\arc_obj_adept</object>
-          <object>objects\arc_obj_inhuman</object>
-          <object>objects\arc_obj_normal</object>
-          <object>objects\arc_obj_advanced</object>
-        </objects>
-        <objects name="MiniMap">
-          <object>objects\arc_obj_hall</object>
-          <object>objects\arc_obj_room_type_collision</object>
-        </objects>
-      </objects>
-      <objects name="Items">
-        <object>objects\arc_obj_key</object>
-        <object>objects\arc_obj_consume</object>
-        <object>objects\arc_obj_item</object>
-        <object>objects\arc_obj_weaponItem</object>
-        <object>objects\arc_obj_otherItem</object>
-        <object>objects\arc_obj_anyItem</object>
-        <object>objects\arc_obj_minorItem</object>
-        <object>objects\arc_obj_minorWeapon</object>
-        <object>objects\arc_obj_minorWeapon2</object>
-        <object>objects\arc_obj_damageField</object>
-        <object>objects\arc_obj_coin</object>
-        <object>objects\arc_obj_health_orb</object>
-        <object>objects\arc_obj_kickable</object>
-        <object>objects\arc_obj_blood_effect</object>
-        <object>objects\arc_obj_bone</object>
-        <object>objects\arc_obj_skull</object>
-      </objects>
-      <objects name="MP">
-        <object>objects\arc_obj_mp_ammo</object>
-        <object>objects\arc_obj_mp_shield</object>
-        <object>objects\arc_obj_mp_triShield</object>
-        <object>objects\arc_obj_mp_health</object>
-        <object>objects\arc_obj_mp_mega</object>
-        <object>objects\arc_obj_pvp_score</object>
-        <object>objects\arc_obj_pvp_countdown</object>
-        <object>objects\arc_obj_mp_spawn</object>
-        <object>objects\arc_bj_mp_minor</object>
-        <object>objects\arc_obj_mp_weaponMinor</object>
-        <object>objects\arc_obj_mp_weaponMajor</object>
-        <object>objects\arc_obj_mp_item</object>
-      </objects>
-      <objects name="Level Generator">
-        <object>objects\arc_obj_floor_generation_new</object>
-        <object>objects\arc_obj_arena_blockout</object>
-        <object>objects\arc_obj_store_blockout</object>
-        <object>objects\arc_obj_start_blockout</object>
-        <object>objects\arc_obj_consume_blockout</object>
-        <object>objects\arc_obj_alter_blockout</object>
-        <object>objects\arc_obj_end_blockout</object>
-        <object>objects\arc_obj_misc_blockout1</object>
-        <object>objects\arc_obj_misc_blockout3</object>
-        <object>objects\arc_obj_misc_blockout2</object>
-        <object>objects\arc_obj_empty_blockout</object>
-        <object>objects\arc_obj_level_macro</object>
-        <object>objects\arc_obj_hor_wall</object>
-        <object>objects\arc_obj_wall_corner</object>
-        <object>objects\arc_obj_gen_wall</object>
-        <object>objects\arc_obj_vert_wall</object>
-        <object>objects\arc_obj_pair</object>
-        <object>objects\arc_obj_gen_room</object>
-        <object>objects\arc_obj_misc_room</object>
-        <object>objects\arc_obj_gen_navpoint</object>
+      <object>objects\obj_player_parent</object>
+      <object>objects\obj_player1</object>
+      <object>objects\obj_player2</object>
+      <object>objects\obj_player1_corpse</object>
+      <object>objects\obj_player2_corpse</object>
+      <objects name="Guns">
+        <object>objects\obj_player_bullet</object>
+        <object>objects\obj_greenParticles</object>
+        <object>objects\obj_redParticles</object>
+        <object>objects\obj_yellowParticles</object>
+        <object>objects\obj_blueParticles</object>
+        <object>objects\obj_blood_particles</object>
+        <object>objects\obj_rbullet</object>
+        <object>objects\obj_rbulletWall</object>
+        <object>objects\obj_mbullet</object>
+        <object>objects\obj_sbullet</object>
+        <object>objects\obj_gbullet</object>
+        <object>objects\obj_gexplosion_damage</object>
+        <object>objects\obj_wbullet</object>
+        <object>objects\obj_purple_orb</object>
+        <object>objects\obj_purple_laser</object>
       </objects>
     </objects>
+    <objects name="Environment">
+      <objects name="Level">
+        <object>objects\obj_wall</object>
+        <object>objects\obj_portal</object>
+        <object>objects\obj_portal_hor</object>
+        <object>objects\obj_jumpPad</object>
+        <objects name="Pits">
+          <object>objects\obj_pit</object>
+          <object>objects\obj_pit2</object>
+          <object>objects\obj_pit3</object>
+          <object>objects\obj_pit4</object>
+        </objects>
+        <objects name="Sandstorm">
+          <object>objects\obj_wind_particle</object>
+          <object>objects\obj_wind_controller</object>
+          <object>objects\obj_sandstorm_controller</object>
+          <object>objects\obj_sandstorm</object>
+          <object>objects\obj_sandstorm1</object>
+          <object>objects\obj_sandstorm2</object>
+          <object>objects\obj_sandstorm3</object>
+          <object>objects\obj_sandstorm4</object>
+        </objects>
+        <objects name="Thorns">
+          <object>objects\obj_thorns_controller</object>
+          <object>objects\obj_thorns</object>
+          <object>objects\obj_thorns_destroyed</object>
+          <object>objects\obj_thorns21</object>
+          <object>objects\obj_thorns31</object>
+          <object>objects\obj_thorns12</object>
+          <object>objects\obj_thorns13</object>
+        </objects>
+        <objects name="Hedges">
+          <object>objects\obj_hedge_controller</object>
+          <object>objects\obj_hedge_down</object>
+          <object>objects\obj_hedge</object>
+          <object>objects\obj_hedge_downA</object>
+          <object>objects\obj_hedge_downB</object>
+          <object>objects\obj_hedgeA</object>
+          <object>objects\obj_hedgeB</object>
+        </objects>
+      </objects>
+      <objects name="Markers">
+        <object>objects\obj_lootPoint</object>
+        <object>objects\obj_baddiepoint</object>
+        <object>objects\obj_baddie_spawner</object>
+      </objects>
+      <objects name="Editor">
+        <objects name="Entrances">
+          <objects name="Alt">
+            <object>objects\obj_entrance1alt</object>
+            <object>objects\obj_entrance2alt</object>
+            <object>objects\obj_entrance3alt</object>
+            <object>objects\obj_entrance4alt</object>
+          </objects>
+          <object>objects\obj_entrance1</object>
+          <object>objects\obj_entrance2</object>
+          <object>objects\obj_entrance3</object>
+          <object>objects\obj_entrance4</object>
+          <object>objects\obj_door_lock</object>
+        </objects>
+        <object>objects\obj_start_plate1</object>
+        <object>objects\obj_room_type</object>
+        <object>objects\obj_room_cap_hor</object>
+        <object>objects\obj_room_cap_vert</object>
+      </objects>
+      <objects name="Rooms">
+        <objects name="Ammo">
+          <object>objects\obj_sp_global_ammo</object>
+          <object>objects\obj_sp_ammo</object>
+        </objects>
+        <object>objects\obj_health_orb_pickup</object>
+        <object>objects\obj_shield_marker</object>
+        <object>objects\obj_explosive_barrel</object>
+        <object>objects\obj_barrel</object>
+        <object>objects\obj_spike_barrel</object>
+        <object>objects\obj_box</object>
+        <object>objects\obj_box_stay</object>
+        <object>objects\obj_crate</object>
+        <object>objects\obj_misc_pad_random</object>
+        <object>objects\obj_finish</object>
+        <object>objects\obj_door</object>
+        <object>objects\obj_statue</object>
+        <object>objects\obj_statue_area</object>
+      </objects>
+      <objects name="Other">
+        <object>objects\obj_solid</object>
+        <object>objects\obj_dirt</object>
+        <object>objects\obj_door_block</object>
+        <object>objects\obj_door_lock_open</object>
+        <object>objects\obj_door_block_hor</object>
+        <object>objects\obj_door_block_vert</object>
+        <object>objects\obj_barrelWood</object>
+        <object>objects\obj_eBarrelWood</object>
+        <object>objects\obj_mBarrelWood</object>
+        <object>objects\obj_cap_destroy_hor</object>
+        <object>objects\obj_cap_destroy_vert</object>
+        <object>objects\obj_barrel_explosion</object>
+        <object>objects\obj_spike</object>
+      </objects>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\obj_bad1</object>
+      <object>objects\obj_bad1b</object>
+      <object>objects\obj_bad2</object>
+      <object>objects\obj_bad2mini</object>
+      <object>objects\obj_bad2b</object>
+      <object>objects\obj_bad3</object>
+      <object>objects\obj_bad3b</object>
+      <object>objects\obj_bad3c</object>
+      <object>objects\obj_bad4</object>
+      <object>objects\obj_bad5</object>
+      <object>objects\obj_bad6</object>
+      <object>objects\obj_bad7</object>
+      <object>objects\obj_bad8</object>
+      <object>objects\obj_bad9</object>
+      <object>objects\obj_bad10</object>
+      <object>objects\obj_bad11</object>
+      <object>objects\obj_bad12</object>
+      <object>objects\obj_bad13</object>
+      <object>objects\obj_bad13_orb</object>
+      <object>objects\obj_bad14</object>
+      <object>objects\obj_bad15</object>
+      <object>objects\obj_bad16</object>
+      <object>objects\obj_bad17</object>
+      <object>objects\obj_bad18</object>
+      <objects name="Objects">
+        <object>objects\obj_baddie</object>
+        <object>objects\obj_ai_planner</object>
+        <objects name="AI">
+          <object>objects\obj_baddie_pointPlayer</object>
+          <object>objects\obj_baddie_point</object>
+          <object>objects\obj_baddie_player</object>
+          <object>objects\obj_baddie_still</object>
+        </objects>
+        <objects name="Attacks">
+          <object>objects\obj_enemy_melee</object>
+          <object>objects\obj_bad3_reveal</object>
+          <object>objects\obj_bad3_attack</object>
+          <object>objects\obj_bad3b_attack</object>
+          <object>objects\obj_bad4_bullet</object>
+          <object>objects\obj_bad6_bullet</object>
+          <object>objects\obj_bad7_attack</object>
+          <object>objects\obj_bad3c_bullet</object>
+          <object>objects\obj_bad5shield</object>
+          <object>objects\obj_9bad_slow</object>
+          <object>objects\obj_fire</object>
+          <object>objects\obj_bad12_seed</object>
+          <object>objects\obj_bad12_attack</object>
+          <object>objects\obj_bad14_shield</object>
+          <object>objects\obj_chargePoint</object>
+          <object>objects\obj_bad15_bullet</object>
+          <object>objects\obj_bad15_aoe</object>
+          <object>objects\obj_bad16_attack</object>
+          <object>objects\obj_bad17_attack</object>
+          <object>objects\obj_bad18_bullet</object>
+          <object>objects\obj_bad18_aoe</object>
+        </objects>
+      </objects>
+      <objects name="Big">
+        <object>objects\obj_bad1_big</object>
+        <object>objects\obj_bad2_big</object>
+        <object>objects\obj_bad3_big</object>
+        <object>objects\obj_bad3b_big</object>
+        <object>objects\obj_bad4_big</object>
+        <object>objects\obj_bad10_big</object>
+        <object>objects\obj_bad12_big</object>
+      </objects>
+    </objects>
+    <objects name="UI">
+      <object>objects\obj_ammo_ui_parent</object>
+      <object>objects\obj_player1_hud</object>
+      <object>objects\obj_player2_hud</object>
+      <objects name="Menu">
+        <object>objects\obj_menu_singleplayer</object>
+        <object>objects\obj_menu_coop</object>
+        <object>objects\obj_menu_versus</object>
+        <object>objects\obj_casual</object>
+        <object>objects\obj_experianced</object>
+        <object>objects\obj_standard</object>
+        <object>objects\obj_adept</object>
+        <object>objects\obj_inhuman</object>
+        <object>objects\obj_normal</object>
+        <object>objects\obj_advanced</object>
+      </objects>
+      <objects name="MiniMap">
+        <object>objects\obj_hall</object>
+        <object>objects\obj_room_type_collision</object>
+      </objects>
+    </objects>
+    <objects name="Items">
+      <object>objects\obj_key</object>
+      <object>objects\obj_consume</object>
+      <object>objects\obj_item</object>
+      <object>objects\obj_weaponItem</object>
+      <object>objects\obj_otherItem</object>
+      <object>objects\obj_anyItem</object>
+      <object>objects\obj_minorItem</object>
+      <object>objects\obj_minorWeapon</object>
+      <object>objects\obj_minorWeapon2</object>
+      <object>objects\obj_damageField</object>
+      <object>objects\obj_coin</object>
+      <object>objects\obj_health_orb</object>
+      <object>objects\obj_kickable</object>
+      <object>objects\obj_blood_effect</object>
+      <object>objects\obj_bone</object>
+      <object>objects\obj_skull</object>
+    </objects>
+    <objects name="MP">
+      <object>objects\obj_mp_ammo</object>
+      <object>objects\obj_mp_shield</object>
+      <object>objects\obj_mp_triShield</object>
+      <object>objects\obj_mp_health</object>
+      <object>objects\obj_mp_mega</object>
+      <object>objects\obj_pvp_score</object>
+      <object>objects\obj_pvp_countdown</object>
+      <object>objects\obj_mp_spawn</object>
+      <object>objects\bj_mp_minor</object>
+      <object>objects\obj_mp_weaponMinor</object>
+      <object>objects\obj_mp_weaponMajor</object>
+      <object>objects\obj_mp_item</object>
+    </objects>
+    <objects name="Level Generator">
+      <object>objects\obj_floor_generation_new</object>
+      <object>objects\obj_arena_blockout</object>
+      <object>objects\obj_store_blockout</object>
+      <object>objects\obj_start_blockout</object>
+      <object>objects\obj_consume_blockout</object>
+      <object>objects\obj_alter_blockout</object>
+      <object>objects\obj_end_blockout</object>
+      <object>objects\obj_misc_blockout1</object>
+      <object>objects\obj_misc_blockout3</object>
+      <object>objects\obj_misc_blockout2</object>
+      <object>objects\obj_empty_blockout</object>
+      <object>objects\obj_level_macro</object>
+      <object>objects\obj_hor_wall</object>
+      <object>objects\obj_wall_corner</object>
+      <object>objects\obj_gen_wall</object>
+      <object>objects\obj_vert_wall</object>
+      <object>objects\obj_pair</object>
+      <object>objects\obj_gen_room</object>
+      <object>objects\obj_misc_room</object>
+      <object>objects\obj_gen_navpoint</object>
+    </objects>
+    <object>objects\obj_menu_cursor</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_game_start</room>
+    <room>rooms\rm_gamestart</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_test</room>
-    <rooms name="Archive">
-      <rooms name="Rooms">
-        <rooms name="Required">
-          <room>rooms\arc_leave</room>
-          <room>rooms\arc_start</room>
-          <room>rooms\arc_shop1</room>
-          <room>rooms\arc_shop2</room>
-          <room>rooms\arc_shop3</room>
-          <room>rooms\arc_consumables</room>
-          <room>rooms\arc_altar</room>
+    <rooms name="Rooms">
+      <rooms name="Required">
+        <room>rooms\leave</room>
+        <room>rooms\start</room>
+        <room>rooms\shop1</room>
+        <room>rooms\shop2</room>
+        <room>rooms\shop3</room>
+        <room>rooms\consumables</room>
+        <room>rooms\altar</room>
+      </rooms>
+      <rooms name="Misc">
+        <rooms name="Hor">
+          <room>rooms\misc_hor_template</room>
+          <room>rooms\misc_hor_generic1</room>
+          <room>rooms\misc_hor_generic2</room>
         </rooms>
-        <rooms name="Misc">
-          <rooms name="Hor">
-            <room>rooms\arc_misc_hor_template</room>
-            <room>rooms\arc_misc_hor_generic1</room>
-            <room>rooms\arc_misc_hor_generic2</room>
-          </rooms>
-          <rooms name="Vert">
-            <room>rooms\arc_misc_vert_template</room>
-            <room>rooms\arc_misc_vert_generic1</room>
-          </rooms>
-          <rooms name="Square">
-            <room>rooms\arc_misc_square_template</room>
-            <room>rooms\arc_misc_square_generic1</room>
-          </rooms>
+        <rooms name="Vert">
+          <room>rooms\misc_vert_template</room>
+          <room>rooms\misc_vert_generic1</room>
         </rooms>
-        <rooms name="Single">
-          <rooms name="Hybrid">
-            <room>rooms\misc_single_hybrid1</room>
-            <room>rooms\misc_single_hybrid2</room>
-            <room>rooms\misc_single_hybrid3</room>
-            <room>rooms\misc_single_hybrid4</room>
-            <room>rooms\misc_single_hybrid5</room>
-            <room>rooms\misc_single_hybrid6</room>
-            <room>rooms\misc_single_hybrid7</room>
-            <room>rooms\misc_single_hybrid8</room>
-            <room>rooms\misc_single_hybrid9</room>
-            <room>rooms\misc_single_hybrid10</room>
-            <room>rooms\misc_single_hybrid11</room>
-            <room>rooms\misc_single_hybrid12</room>
-            <room>rooms\misc_single_hybrid13</room>
-            <room>rooms\misc_single_hybrid14</room>
-            <room>rooms\misc_single_hybrid15</room>
-            <room>rooms\misc_single_hybrid16</room>
-            <room>rooms\misc_single_hybrid17</room>
-            <room>rooms\misc_single_hybrid18</room>
-            <room>rooms\misc_single_hybrid19</room>
-          </rooms>
-          <rooms name="Closed">
-            <room>rooms\misc_single_closed1</room>
-            <room>rooms\misc_single_closed2</room>
-            <room>rooms\misc_single_closed3</room>
-            <room>rooms\misc_single_closed4</room>
-            <room>rooms\misc_single_closed5</room>
-            <room>rooms\misc_single_closed6</room>
-            <room>rooms\misc_single_closed7</room>
-            <room>rooms\misc_single_closed8</room>
-            <room>rooms\misc_single_closed9</room>
-            <room>rooms\misc_single_closed10</room>
-          </rooms>
-          <rooms name="Deadend">
-            <room>rooms\misc_single_deadend1</room>
-            <room>rooms\misc_single_deadend2</room>
-          </rooms>
-          <room>rooms\misc_single_template</room>
+        <rooms name="Square">
+          <room>rooms\misc_square_template</room>
+          <room>rooms\misc_square_generic1</room>
         </rooms>
-        <rooms name="Old">
-          <room>rooms\arc_rm_item</room>
-          <room>rooms\arc_rm_barrels</room>
-          <room>rooms\arc_rm_consume</room>
-          <room>rooms\arc_rm_boxes</room>
-          <room>rooms\arc_rm_statue</room>
-          <room>rooms\arc_rm_discount</room>
+      </rooms>
+      <rooms name="Single">
+        <rooms name="Hybrid">
+          <room>rooms\misc_single_hybrid1</room>
+          <room>rooms\misc_single_hybrid2</room>
+          <room>rooms\misc_single_hybrid3</room>
+          <room>rooms\misc_single_hybrid4</room>
+          <room>rooms\misc_single_hybrid5</room>
+          <room>rooms\misc_single_hybrid6</room>
+          <room>rooms\misc_single_hybrid7</room>
+          <room>rooms\misc_single_hybrid8</room>
+          <room>rooms\misc_single_hybrid9</room>
+          <room>rooms\misc_single_hybrid10</room>
+          <room>rooms\misc_single_hybrid11</room>
+          <room>rooms\misc_single_hybrid12</room>
+          <room>rooms\misc_single_hybrid13</room>
+          <room>rooms\misc_single_hybrid14</room>
+          <room>rooms\misc_single_hybrid15</room>
+          <room>rooms\misc_single_hybrid16</room>
+          <room>rooms\misc_single_hybrid17</room>
+          <room>rooms\misc_single_hybrid18</room>
+          <room>rooms\misc_single_hybrid19</room>
         </rooms>
+        <rooms name="Closed">
+          <room>rooms\misc_single_closed1</room>
+          <room>rooms\misc_single_closed2</room>
+          <room>rooms\misc_single_closed3</room>
+          <room>rooms\misc_single_closed4</room>
+          <room>rooms\misc_single_closed5</room>
+          <room>rooms\misc_single_closed6</room>
+          <room>rooms\misc_single_closed7</room>
+          <room>rooms\misc_single_closed8</room>
+          <room>rooms\misc_single_closed9</room>
+          <room>rooms\misc_single_closed10</room>
+        </rooms>
+        <rooms name="Deadend">
+          <room>rooms\misc_single_deadend1</room>
+          <room>rooms\misc_single_deadend2</room>
+        </rooms>
+        <room>rooms\misc_single_template</room>
       </rooms>
       <rooms name="Arenas">
         <room>rooms\arena_empty</room>
@@ -1021,21 +1003,17 @@
           <room>rooms\arena3_2</room>
           <room>rooms\arena3_3</room>
           <room>rooms\arena4_1</room>
-          <room>rooms\arena4_X</room>
           <room>rooms\arena3_X</room>
-        </rooms>
-        <rooms name="Archive">
-          <room>rooms\arena2b</room>
-          <room>rooms\rm_floor2</room>
+          <room>rooms\arena4_X</room>
         </rooms>
       </rooms>
-      <room>rooms\arc_arena_test</room>
-      <room>rooms\arc_rm_floor</room>
-      <room>rooms\arc_rm_mp1</room>
-      <room>rooms\arc_rm_hardcore</room>
-      <room>rooms\arc_rm_difficulty</room>
-      <room>rooms\arc_rm_menu</room>
-      <room>rooms\arc_rm_gamestart</room>
+    </rooms>
+    <rooms name="Archive">
+      <room>rooms\arena_test</room>
+      <room>rooms\rm_floor</room>
+      <room>rooms\rm_mp1</room>
+      <room>rooms\rm_hardcore</room>
+      <room>rooms\rm_difficulty</room>
     </rooms>
   </rooms>
   <constants number="6">
