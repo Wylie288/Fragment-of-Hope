@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1836</width>
   <height>1242</height>
-  <vsnap>27</vsnap>
-  <hsnap>27</hsnap>
+  <vsnap>54</vsnap>
+  <hsnap>54</hsnap>
   <isometric>0</isometric>
   <speed>144</speed>
   <persistent>0</persistent>
@@ -603,6 +603,30 @@
     <instance objName="obj_explosive_barrel" x="729" y="297" name="inst_ADE7B11E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1188" y="1026" name="inst_A82E8B5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_start_plate1" x="459" y="513" name="inst_CDC5B1D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="108" y="216" name="inst_1211710E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="162" y="216" name="inst_99519B7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="216" y="270" name="inst_1ABA35C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="216" y="324" name="inst_4CD33DBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="162" y="378" name="inst_366D6F67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="108" y="378" name="inst_4992FCB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="810" y="108" name="inst_31FD36AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="810" y="162" name="inst_8C3FD0E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="864" y="216" name="inst_E7A76842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="918" y="216" name="inst_3739145E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="972" y="108" name="inst_3F0ED8F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="972" y="162" name="inst_F9052116" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="1620" y="810" name="inst_81D43D74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="1566" y="810" name="inst_5673A5CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="1512" y="864" name="inst_6D031C8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="1512" y="918" name="inst_B1EA8F87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="1620" y="972" name="inst_76A2B929" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="1566" y="972" name="inst_35CE46F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="810" y="972" name="inst_268BE7D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="810" y="918" name="inst_A524EA29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="864" y="864" name="inst_C086CF08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="918" y="864" name="inst_9BDF804A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="972" y="918" name="inst_3FA7422B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_start_plate1" x="972" y="972" name="inst_48117762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

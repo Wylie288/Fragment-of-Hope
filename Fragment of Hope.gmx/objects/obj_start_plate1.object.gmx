@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_fight_plate</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -175,7 +175,7 @@ with obj_start_plate1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if trigger = 0
+            <string>if trigger = 0 and global.ignoreBattles = false
 {
     trigger = 1
     instance_activate_object(obj_start_plate1)

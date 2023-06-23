@@ -98,6 +98,10 @@ repeat(global.healthOrbs)
     with instance_create(x, y, obj_health_orb)
         value = 1
         
+if global.difficulty = "casual" or global.difficulty = "experianced"
+    with instance_create(x, y, obj_health_orb)
+        value = 1
+        
 audio_play_sound(kill, 1, 0)
 
 if big = 1

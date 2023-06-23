@@ -37,14 +37,23 @@ iFrameLength = sec * 0.5
 
 //Health
 if global.difficulty = "casual"
-    maxHealth = 150
+{
+    maxHealth = 200
+    currentHealth = 150
+}
 else if global.difficulty = "experianced"
+{
     maxHealth = 125
+    currentHealth = 100
+}
 else
+{
     maxHealth = 100
+    currentHealth = 100
+}
     
 if global.difficulty = "casual"
-    minHealth = 75
+    minHealth = 100
 else if global.difficulty = "experianced"
     minHealth = 40
 else if global.difficulty = "standard"
@@ -138,6 +147,7 @@ if global.gp &gt; 0
     b_consume2 = gp_face1
     b_nextweapon = gp_shoulderr
     b_prevweapon = gp_shoulderl
+    b_interact = gp_face1
 }
 else
 {
@@ -148,7 +158,7 @@ else
     b_shoot = mb_left
     b_shoot2 = mb_right
     b_aim = mb_right
-    b_consume1 = vk_shift
+    b_consume1 = ord("Q")
     b_consume2 = vk_shift
     b_g = ord("1")
     b_b = ord("2")
@@ -156,6 +166,7 @@ else
     b_r = ord("4")
     b_nextweapon = ord("E")
     b_prevweapon = ord("Q")
+    b_interact = ord("E")
 }
 </string>
           </argument>
@@ -210,7 +221,6 @@ quadTimer = 0
 gold = 0
 speedBonus = 0
 invulnerable = 0
-currentHealth = 100
 aimLength = 60
 weapon = WGREEN
 point = noone
@@ -322,6 +332,11 @@ weaponMaxRecoil = 0
 weaponRecoilX = 0
 weaponRecoilY = 0
 weaponMaxDistRecoil = 0
+
+if global.gp = 0
+    itemPrompt = 6
+else
+    itemPrompt = 0
 
 global.part = part_system_create()
 </string>
@@ -1226,7 +1241,7 @@ else
         if keyboard_check_pressed(b_r)
             weaponSelect = WRED
             
-        if keyboard_check_pressed(b_nextweapon) or mouse_wheel_up()
+        if mouse_wheel_up()
         {
             weaponSelect = weapon
             switch (weaponSelect)
@@ -1237,7 +1252,7 @@ else
                 case WRED: weaponSelect = WGREEN; break;   
             }
         }
-        if keyboard_check_pressed(b_prevweapon) or mouse_wheel_down()
+        if mouse_wheel_down()
         {
             weaponSelect = weapon
             switch (weaponSelect)
@@ -1817,7 +1832,10 @@ bought = 0
 itemName = other.name
 itemDesc = other.desc
 itemPrice = floor(other.cost * (1 - other.discount) * (1 - global.discount))
-itemPrompt = 0
+if global.gp = 0
+    itemPrompt = 6
+else
+    itemPrompt = 0
 
 if itemName = "Shield Fill"
     itemPrice = 20 * shieldMax
@@ -1876,7 +1894,7 @@ itemPickupPressed = 0
 
 if global.gp &gt; 0 and gamepad_button_check_pressed(gamepadID, b_g)
     itemPickupPressed = 1
-if global.gp = 0 and keyboard_check_pressed(b_shoot)
+if global.gp = 0 and keyboard_check_pressed(b_interact)
     itemPickupPressed = 1
 
 
@@ -1976,7 +1994,7 @@ consumePickupPressed = 0
 
 if global.gp &gt; 0 and gamepad_button_check_pressed(gamepadID, b_g)
     consumePickupPressed = 1
-if global.gp = 0 and keyboard_check_pressed(b_shoot)
+if global.gp = 0 and keyboard_check_pressed(b_interact)
     consumePickupPressed = 1
 
 if consumePickupPressed
@@ -2547,9 +2565,20 @@ other.damaged = 1
 statue = 1
 statueType = other.type
 statueDesc = other.desc
-statuePrompt = other.prompt
 
-if statueType = "freeItem" and gamepad_button_check_pressed(gamepadID, b_g)
+if global.gp = 0
+    itemPrompt = 6
+else
+    itemPrompt = 0
+
+statuePickupPressed = 0
+
+if global.gp &gt; 0 and gamepad_button_check_pressed(gamepadID, b_g)
+    statuePickupPressed = 1
+if global.gp = 0 and keyboard_check_pressed(b_interact)
+    statuePickupPressed = 1
+
+if statueType = "freeItem" and statuePickupPressed
 {
     currentHealth -= 20
     with instance_create(other.x-27, other.y+81, obj_anyItem)
@@ -2561,7 +2590,7 @@ if statueType = "freeItem" and gamepad_button_check_pressed(gamepadID, b_g)
     itemVibration()
 }
 
-if statueType = "moveSpeed" and gamepad_button_check_pressed(gamepadID, b_g)
+if statueType = "moveSpeed" and statuePickupPressed
 {
     currentHealth -= 20
     moveSpeed += 0.5
@@ -2572,14 +2601,14 @@ if statueType = "moveSpeed" and gamepad_button_check_pressed(gamepadID, b_g)
     itemVibration()
 }
 
-if statueType = "nuke" and gamepad_button_check_pressed(gamepadID, b_g)
+if statueType = "nuke" and statuePickupPressed
 {
     currentHealth = choose(0, maxHealth)
     
     itemVibration()
 }
 
-if statueType = "coins" and gamepad_button_check_pressed(gamepadID, b_g)
+if statueType = "coins" and statuePickupPressed
 {
     currentHealth -= 20
     repeat(10)
@@ -2595,7 +2624,7 @@ if statueType = "coins" and gamepad_button_check_pressed(gamepadID, b_g)
 if statueType = "damage"
 {
     rate = 0.25
-    if gamepad_button_check_pressed(gamepadID, b_g)
+    if statuePickupPressed
     {
         currentHealth -= 20
         greenDamage += greenDamageBase * rate
@@ -2604,7 +2633,7 @@ if statueType = "damage"
             image_index += 1
         itemVibration()
     }
-    if gamepad_button_check_pressed(gamepadID, b_r)
+    if statuePickupPressed
     {
         currentHealth -= 20
         redDamage += redDamageBase * rate
@@ -2613,7 +2642,7 @@ if statueType = "damage"
             image_index += 1
         itemVibration()
     }
-    if gamepad_button_check_pressed(gamepadID, b_y)
+    if statuePickupPressed
     {
         currentHealth -= 20
         yellowDamage += yellowDamageBase * rate
@@ -2935,7 +2964,7 @@ if place_meeting(x, y, obj_consume)
     draw_set_font(mono16)
     draw_text(x, y+100, consumeName)
     
-    draw_sprite(spr_button_prompt, 0, x, y+209)
+    draw_sprite(spr_button_prompt, itemPrompt, x, y+209)
 }
 
 if place_meeting(x, y, obj_item)
@@ -2969,7 +2998,7 @@ if statue = 1
     draw_set_font(mono16)
     draw_text(x, y+100, "Blood Statue")
     
-    draw_sprite(spr_button_prompt, statuePrompt, x, y+209)
+    draw_sprite(spr_button_prompt, itemPrompt, x, y+209)
 }
 
 </string>

@@ -31,6 +31,9 @@ stopped = false
 
 direction = irandom(360)
 speed = choose(3, 3, 4 ,5)
+
+if global.difficulty = "master"
+    instance_destroy()
 </string>
           </argument>
         </arguments>
@@ -88,6 +91,10 @@ if speed &lt; 0
         
     stopped = true
 }
+
+if global.difficulty = "casual"
+    if value = 1
+        value = 2
 </string>
           </argument>
         </arguments>

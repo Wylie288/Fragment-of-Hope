@@ -79,7 +79,7 @@ global.restockTime = 1
 
 if file_exists(roomName)
     file_delete(roomName)
-global.textFile = file_text_open_write(string(roomName))
+global.textFile = file_text_open_write("levelData/"+string(roomName))
 
 wcXY(obj_start_plate1, "plate1")
 wcXY(obj_lootPoint, "lootPoint")

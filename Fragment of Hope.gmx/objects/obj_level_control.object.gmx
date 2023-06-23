@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.keys = 9
+            <string>global.keys = 0
 global.arenaLock = 0
 global.coins = 0
 global.enemySlow = 0
@@ -74,10 +74,10 @@ timeEnd = 0
 //Ammo Max
 if global.difficulty = "casual"
 {
-    global.greenAmmoMax = 8
+    global.greenAmmoMax = 10
     global.blueAmmoMax = 50
-    global.yellowAmmoMax = 12
-    global.redAmmoMax = 9
+    global.yellowAmmoMax = 15
+    global.redAmmoMax = 12
     
     if global.mp = 0
         global.restockTime = sec * 4
@@ -88,10 +88,10 @@ if global.difficulty = "casual"
 }
 else if global.difficulty = "experianced"
 {
-    global.greenAmmoMax = 6
-    global.blueAmmoMax = 35
-    global.yellowAmmoMax = 9
-    global.redAmmoMax = 7
+    global.greenAmmoMax = 8
+    global.blueAmmoMax = 40
+    global.yellowAmmoMax = 10
+    global.redAmmoMax = 8
     
     if global.mp = 0
         global.restockTime = sec * 5
@@ -195,23 +195,35 @@ global.weaponLootI = 0
 tempList = ds_list_create()
 
 //Health
-ds_list_add(tempList, "Health Max")
-ds_list_add(tempList, "Health")
-ds_list_add(tempList, "Health Orb")
-ds_list_shuffle(tempList)
-ds_list_add(global.normalLoot, ds_list_find_value(tempList, 0))
-ds_list_add(global.normalLoot, ds_list_find_value(tempList, 1))
-ds_list_add(global.normalLoot, ds_list_find_value(tempList, 2))
-ds_list_clear(tempList)
+if global.difficulty != "master"
+{
+    ds_list_add(tempList, "Health Max")
+    ds_list_add(tempList, "Health")
+    ds_list_add(tempList, "Health Orb")
+    ds_list_shuffle(tempList)
+    ds_list_add(global.normalLoot, ds_list_find_value(tempList, 0))
+    ds_list_add(global.normalLoot, ds_list_find_value(tempList, 1))
+    ds_list_add(global.normalLoot, ds_list_find_value(tempList, 2))
+    ds_list_clear(tempList)
+}
 
 //Shield
-ds_list_add(tempList, "Shield Fill")
-ds_list_add(tempList, "Shield Add")
-ds_list_add(tempList, "Damage Resist")
-ds_list_shuffle(tempList)
-ds_list_add(global.normalLoot, ds_list_find_value(tempList, 0))
-ds_list_add(global.normalLoot, ds_list_find_value(tempList, 1))
-ds_list_clear(tempList)
+if global.difficulty != "master"
+{
+    ds_list_add(tempList, "Shield Fill")
+    ds_list_add(tempList, "Shield Add")
+    ds_list_add(tempList, "Damage Resist")
+    ds_list_shuffle(tempList)
+    ds_list_add(global.normalLoot, ds_list_find_value(tempList, 0))
+    ds_list_add(global.normalLoot, ds_list_find_value(tempList, 1))
+    ds_list_clear(tempList)
+}
+else
+{
+    ds_list_add(tempList, "Damage Resist")
+    ds_list_add(global.normalLoot, ds_list_find_value(tempList, 0))
+    ds_list_clear(tempList)
+}
 
 //Aux
 ds_list_add(tempList, "Move Speed")
@@ -228,6 +240,8 @@ ds_list_add(tempList, "Coin Rate")
 ds_list_add(tempList, "Discount")
 ds_list_shuffle(tempList)
 ds_list_add(global.normalLoot, ds_list_find_value(tempList, 0))
+if global.difficulty = "master"
+    ds_list_add(global.normalLoot, ds_list_find_value(tempList, 1)) 
 ds_list_clear(tempList)
 
 //Weapon Setup
@@ -235,51 +249,61 @@ red = 1
 green = 1
 blue = 1
 yellow = 1
-ds_list_add(tempList, "red")
-ds_list_add(tempList, "green")
-ds_list_add(tempList, "blue")
-ds_list_add(tempList, "yellow")
-ds_list_shuffle(tempList)
-switch (ds_list_find_value(tempList, 0))
+if global.difficulty != "master"
 {
-    case "red": red = 0; break;
-    case "green": green = 0; break;
-    case "blue": blue = 0; break;
-    case "yellow": yellow = 0; break;
+    ds_list_add(tempList, "red")
+    ds_list_add(tempList, "green")
+    ds_list_add(tempList, "blue")
+    ds_list_add(tempList, "yellow")
+    ds_list_shuffle(tempList)
+    switch (ds_list_find_value(tempList, 0))
+    {
+        case "red": red = 0; break;
+        case "green": green = 0; break;
+        case "blue": blue = 0; break;
+        case "yellow": yellow = 0; break;
+    }
+    switch (ds_list_find_value(tempList, 1))
+    {
+        case "red": red = 2; break;
+        case "green": green = 2; break;
+        case "blue": blue = 2; break;
+        case "yellow": yellow = 2; break;
+    }
+    ds_list_clear(tempList)
 }
-switch (ds_list_find_value(tempList, 1))
-{
-    case "red": red = 2; break;
-    case "green": green = 2; break;
-    case "blue": blue = 2; break;
-    case "yellow": yellow = 2; break;
-}
-ds_list_clear(tempList)
-
 fireRate = 1
 damage = 1
 secondaryDamage = global.hardcore
 pierce = 1
 bounce = 1
 ammo = 1
-ds_list_add(tempList, "Fire Rate")
-ds_list_add(tempList, "Damage")
-if global.hardcore
-    ds_list_add(tempList, "Secondary Damage")
-ds_list_add(tempList, "Pierce")
-ds_list_add(tempList, "Bounce")
-ds_list_add(tempList, "Ammo")
-ds_list_shuffle(tempList)
 
-switch (ds_list_find_value(tempList, 0))
+if global.difficulty != "master"
 {
-    case "Fire Rate": fireRate = 0; break;
-    case "Damage": damage = 0; break;
-    case "Secondary Damage": secondaryDamage = 0; break;
-    case "Pierce": pierce = 0; break;
-    case "Bounce": bounce = 0; break;
-    case "Ammo": ammo = 0; break;
+    ds_list_add(tempList, "Fire Rate")
+    ds_list_add(tempList, "Damage")
+    if global.hardcore
+        ds_list_add(tempList, "Secondary Damage")
+    ds_list_add(tempList, "Pierce")
+    ds_list_add(tempList, "Bounce")
+    ds_list_add(tempList, "Ammo")
+    ds_list_shuffle(tempList)
+
+    switch (ds_list_find_value(tempList, 0))
+    {
+        case "Fire Rate": fireRate = 0; break;
+        case "Damage": damage = 0; break;
+        case "Secondary Damage": secondaryDamage = 0; break;
+        case "Pierce": pierce = 0; break;
+        case "Bounce": bounce = 0; break;
+        case "Ammo": ammo = 0; break;
+    }
 }
+
+ii = 2
+if global.difficulty = "master"
+    ii = 3
 
 //Fire Rate
 if fireRate = 1
@@ -318,21 +342,21 @@ if secondaryDamage = 1 and global.hardcore
 //Pierce
 if pierce = 1
 {
-    repeat(blue * 2)
+    repeat(blue * ii)
         ds_list_add(global.weaponLoot, "Blue Pierce")
-    repeat(red * 2)
+    repeat(red * ii)
         ds_list_add(global.weaponLoot, "Red Pierce")
-    repeat(yellow * 2)
+    repeat(yellow * ii)
         ds_list_add(global.weaponLoot, "Yellow Pierce")
 }
 //Bounce
 if bounce = 1
 {
-    repeat(blue * 2)
+    repeat(blue * ii)
         ds_list_add(global.weaponLoot, "Blue Bounce")
-    repeat(red * 2)
+    repeat(red * ii)
         ds_list_add(global.weaponLoot, "Red Bounce")
-    repeat(green * 2)
+    repeat(green * ii)
         ds_list_add(global.weaponLoot, "Green Bounce")
 }
 //Ammo
@@ -539,7 +563,10 @@ if global.gameMode = "pvp"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end()
+            <string>room_goto(rm_menu)
+if instance_exists(obj_player1)
+    instance_destroy(obj_player1)
+instance_destroy()
 </string>
           </argument>
         </arguments>

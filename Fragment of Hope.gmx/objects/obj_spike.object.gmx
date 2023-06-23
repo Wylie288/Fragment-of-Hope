@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>bounce = 1
 speed = 5
-damage = 1
+damage = 10
 </string>
           </argument>
         </arguments>

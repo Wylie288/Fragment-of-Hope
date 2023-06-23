@@ -30,8 +30,6 @@ while(!file_text_eof(global.textFile))
         case "weaponItem": acXY(obj_weaponItem, x, y); break;
         case "otherItem": acXY(obj_otherItem, x, y); break;
         case "pit": acXY(obj_pit4, x, y); break;
-        case "barrel": acXY(obj_barrel, x, y); break;
-        case "box": acXY(obj_box, x, y); break;
         case "boxStay": acXY(obj_box_stay, x, y); break;
         case "jumpPad": acXY(obj_jumpPad, x, y); break;
         case "statueArea": acXY(obj_statue_area, x, y); break;
@@ -53,8 +51,6 @@ while(!file_text_eof(global.textFile))
         case "explosiveBarrel": acXY(obj_explosive_barrel, x, y); break;
         case "minorWeapon": acXY(obj_minorWeapon, x, y); break;
         case "minorWeapon2": acXY(obj_minorWeapon2, x, y); break;
-        case "healthOrb": acXY(obj_health_orb_pickup, x, y); break;
-        case "shieldMarker": acXY(obj_shield_marker, x, y); break;
         case "entrance1": acXY(obj_entrance1, x, y); break;
         case "entrance2": acXY(obj_entrance2, x, y); break;
         case "entrance3": acXY(obj_entrance3, x, y); break;
@@ -63,19 +59,30 @@ while(!file_text_eof(global.textFile))
         case "entrance2alt": acXY(obj_entrance2alt, x, y); break;
         case "entrance3alt": acXY(obj_entrance3alt, x, y); break;
         case "entrance4alt": acXY(obj_entrance4alt, x, y); break;
-        case "ammoGlobal": acXY(obj_sp_global_ammo, x, y); break;
         case "miscRandom": acXY(obj_misc_pad_random, x, y); break;
-
         
         case "portal": acPortal(x, y); break;
         case "portalHor": acPortalHor(x, y); break;
         case "badSpawner": acPoint(obj_baddie_spawner, x, y, listBadSpawner); break;
         case "badPoint": acPoint(obj_baddiepoint, x, y, listBadPoint); break;
-        case "crate": acCrate(obj_crate, x, y); break;
         case "anyItem": acItem(obj_anyItem, x, y); break;
         case "type": acType(obj_room_type); break;
-        case "ammo": acCrate(obj_sp_ammo, x, y); break;
         case "plate1": acStartPlate(obj_start_plate1, x, y, arena); break;
+    }
+    
+    if global.barrels < 2
+    {
+        switch (line)
+        {
+            case "barrel": acXY(obj_barrel, x, y); break;
+            case "box": acXY(obj_box, x, y); break;
+            case "healthOrb": acXY(obj_health_orb_pickup, x, y); break;
+            case "shieldMarker": acXY(obj_shield_marker, x, y); break;
+            case "ammoGlobal": acXY(obj_sp_global_ammo, x, y); break;
+            
+            case "crate": acCrate(obj_crate, x, y); break;
+            case "ammo": acCrate(obj_sp_ammo, x, y); break;
+        }
     }
      
 }

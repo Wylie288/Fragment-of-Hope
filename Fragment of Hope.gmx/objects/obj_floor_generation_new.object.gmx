@@ -45,6 +45,7 @@ with obj_gen_navpoint
 //alarm[0] = 1
 grid = 0
 global.generation = 1
+global.barrels = 0
 </string>
           </argument>
         </arguments>
@@ -579,9 +580,15 @@ global.generation = 0
 instance_activate_object(obj_barrel)
 
 if global.mp = 0
+{
     coins = 90
+    if global.difficulty = "casual"
+        coins = 135
+}
 else
     coins = 140
+    
+
 
 repeat(90)
 {
@@ -1338,9 +1345,13 @@ with obj_empty_blockout
     
     if irandom(9) &lt;= 2 and deadend != 3
         roomType = "misc_single_hybrid3"
+        
+    global.barrels = irandom(2)
     
     scr_arena_create(x, y, roomType)
     visible = 0
+    
+    global.barrels = 0
     
     ds_list_destroy(roomSelect)
 }

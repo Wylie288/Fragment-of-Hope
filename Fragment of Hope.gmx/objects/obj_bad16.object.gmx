@@ -158,6 +158,7 @@ y = point.y
             <kind>1</kind>
             <string>point = point
 speed = moveSpeed
+angle_offset = 45
 
 if attackTimer &gt; 0 and blueSlow &lt;= 0
     attackTimer -= 1
@@ -166,25 +167,25 @@ if attackTimer &lt;= 0
 {
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 0
+        image_angle = 0 + angle_offset
         damage = other.damage
         parent = other
     }
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 90
+        image_angle = 90 + angle_offset
         damage = other.damage
         parent = other
     }
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 180
+        image_angle = 180 + angle_offset
         damage = other.damage
         parent = other
     }
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 270
+        image_angle = 270 + angle_offset
         damage = other.damage
         parent = other
     }

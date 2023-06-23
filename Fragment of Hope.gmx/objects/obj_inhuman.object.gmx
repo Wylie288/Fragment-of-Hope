@@ -62,9 +62,11 @@ No shield upgrades
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_difficulty)
+            <string>room_goto(rm_hardcore)
 
-global.difficulty = "inhuman"
+global.difficulty = "master"
+global.enemyDiff = 4
+global.enemyDamage = 4
 </string>
           </argument>
         </arguments>

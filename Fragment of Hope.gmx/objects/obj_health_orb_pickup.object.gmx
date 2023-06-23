@@ -30,6 +30,12 @@
 //direction = irandom(360)
 //speed = choose(3, 3, 4 ,5)
 value = 1
+
+if global.difficulty = "casual"
+    value = 2
+
+if global.difficulty = "master"
+    instance_destroy()
 </string>
           </argument>
         </arguments>

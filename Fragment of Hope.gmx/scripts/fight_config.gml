@@ -4,7 +4,8 @@ badTypes = 1
 spawnCountTime = sec * global.spawnTime
 spawnCount = sec * 2
 global.arenaLock = 1
-gridMade = 0
+fight_grid()
+gridMade = 1
 
 audio_stop_sound(ambient)
 audio_play_sound(battle, 10, 0)
@@ -244,14 +245,14 @@ if spawnerOn = 1
 instance_create(x+108, y+108, obj_player1_hud)
 
 #define fight_step
+/*if gridMade = 0 and obj_camera.inPlace = 1
+{
+    fight_grid()
+    gridMade = 1
+}*/
+
 if spawnerOn = 1
 {
-    if gridMade = 0 and obj_camera.inPlace = 1
-    {
-        fight_grid()
-        gridMade = 1
-    }
-    
     if instance_exists(obj_player_parent)
     {
         if instance_number(obj_baddie) < maxBad
@@ -441,6 +442,8 @@ if instance_exists(obj_wind_controller)
         instance_destroy(obj_wind_controller)
 
 #define fight_grid
+instance_activate_region(x, y, 1890, 1296, 1)
+
 global.grid = mp_grid_create(x, y, 1890/54, 1296/54, 54, 54)
 global.gridFly = mp_grid_create(x, y, 1890/54, 1296/54, 54, 54)
 

@@ -29,6 +29,7 @@
 
 debug = 0
 global.myControls = true
+global.ignoreBattles = false
 
 global.level = 1
 global.hardcore = 0
