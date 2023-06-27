@@ -2898,13 +2898,13 @@ draw_set_valign(fa_middle)
 
 
 draw_set_color(green)
-draw_text(x-30, y+49, greenAmmo)
+draw_text(x-32, y+49, greenAmmo)
 draw_set_color(blue)
-draw_text(x-8, y+49, blueAmmo)
+draw_text(x-11, y+49, blueAmmo)
 draw_set_color(yellow)
-draw_text(x+15, y+49, yellowAmmo)
+draw_text(x+11, y+49, yellowAmmo)
 draw_set_color(red)
-draw_text(x+30, y+49, redAmmo)
+draw_text(x+32, y+49, redAmmo)
 
 if global.arenaLock = 0
 {

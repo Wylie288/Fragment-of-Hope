@@ -324,8 +324,6 @@
     <instance objName="obj_baddie_spawner" x="864" y="1026" name="inst_E12870B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddie_spawner" x="270" y="162" name="inst_0E250C14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrel" x="513" y="135" name="inst_BA7A1AA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="999" y="621" name="inst_2C8E0662" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1215" y="621" name="inst_767E4551" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="1107" y="621" name="inst_0608CFA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_type" x="297" y="270" name="inst_A236962A" locked="0" code="type = &quot;arena&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wind_controller" x="-162" y="0" name="inst_14F6AF5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

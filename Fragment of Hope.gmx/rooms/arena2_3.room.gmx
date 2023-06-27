@@ -302,9 +302,7 @@
     <instance objName="obj_thorns21" x="1674" y="486" name="inst_36B55AF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_thorns21" x="810" y="594" name="inst_69E85963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_thorns31" x="108" y="594" name="inst_2362FC0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="972" y="540" name="inst_40AB5681" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="1080" y="540" name="inst_91686053" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1188" y="540" name="inst_939A8033" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="162" y="378" name="inst_870ACBA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="189" y="729" name="inst_DB825B51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="297" y="1026" name="inst_A2B52202" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

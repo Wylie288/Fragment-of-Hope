@@ -167,25 +167,25 @@ if attackTimer &lt;= 0
 {
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 0 + angle_offset
+        image_angle = 0 + other.angle_offset
         damage = other.damage
         parent = other
     }
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 90 + angle_offset
+        image_angle = 90 + other.angle_offset
         damage = other.damage
         parent = other
     }
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 180 + angle_offset
+        image_angle = 180 + other.angle_offset
         damage = other.damage
         parent = other
     }
     with instance_create(x, y, obj_bad16_attack)
     {
-        image_angle = 270 + angle_offset
+        image_angle = 270 + other.angle_offset
         damage = other.damage
         parent = other
     }

@@ -289,9 +289,7 @@
     <instance objName="obj_baddiepoint" x="621" y="1026" name="inst_A159A113" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="999" y="999" name="inst_9F63ED74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="189" y="702" name="inst_EB64E2F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="810" y="783" name="inst_ADFC05B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="918" y="783" name="inst_42E466CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1026" y="783" name="inst_99855046" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_type" x="891" y="594" name="inst_5A31118E" locked="0" code="type = &quot;arena&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_explosive_barrel" x="783" y="405" name="inst_F7B4C0D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_explosive_barrel" x="1323" y="945" name="inst_5291E302" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

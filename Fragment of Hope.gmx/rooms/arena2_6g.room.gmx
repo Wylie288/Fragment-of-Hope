@@ -323,8 +323,6 @@
     <instance objName="obj_jumpPad" x="486" y="1026" name="inst_4D9C62EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_jumpPad" x="1404" y="162" name="inst_600D31F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="1134" y="432" name="inst_9F645794" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1026" y="432" name="inst_6B335E0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1242" y="432" name="inst_122689A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="270" y="270" name="inst_210E80A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="1620" y="918" name="inst_348853E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="162" y="1026" name="inst_81EBD029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

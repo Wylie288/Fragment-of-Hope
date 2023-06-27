@@ -374,8 +374,6 @@
     <instance objName="obj_baddiepoint" x="1188" y="162" name="inst_88E0C774" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="648" y="162" name="inst_4F883E48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="1296" y="810" name="inst_CF6A8CD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1188" y="810" name="inst_C586F7A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1404" y="810" name="inst_2346ABF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_start_plate1" x="1269" y="702" name="inst_56466085" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hedge_controller" x="-81" y="0" name="inst_EA734321" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_explosive_barrel" x="1539" y="621" name="inst_82D55E4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

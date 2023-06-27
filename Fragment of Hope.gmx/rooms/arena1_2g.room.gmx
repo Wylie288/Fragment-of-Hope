@@ -340,8 +340,6 @@
     <instance objName="obj_barrel" x="1485" y="621" name="inst_D05F9028" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_barrel" x="1539" y="837" name="inst_5E36D97E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="1215" y="513" name="inst_944B4B7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1080" y="513" name="inst_2B4FE0C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1350" y="513" name="inst_856665BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_type" x="216" y="270" name="inst_59242EA2" locked="0" code="type = &quot;arena&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sp_ammo" x="189" y="405" name="inst_09C6B0F6" locked="0" code="type = &quot;r&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sp_ammo" x="1215" y="189" name="inst_17E8F135" locked="0" code="type = &quot;b&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

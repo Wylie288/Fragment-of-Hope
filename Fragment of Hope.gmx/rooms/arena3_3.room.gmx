@@ -570,9 +570,7 @@
     <instance objName="obj_door_lock" x="1674" y="918" name="inst_B021FEAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_lock" x="918" y="1026" name="inst_60436A5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door_lock" x="865" y="1026" name="inst_8F10DEF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="810" y="486" name="inst_C6F1DBED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="891" y="486" name="inst_8AD15920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="972" y="486" name="inst_D812BF6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="270" y="243" name="inst_FBD9236F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="648" y="243" name="inst_75ECB5D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="945" y="243" name="inst_1711D77E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

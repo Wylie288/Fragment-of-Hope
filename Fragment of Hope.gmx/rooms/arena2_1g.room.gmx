@@ -321,9 +321,7 @@
     <instance objName="obj_pit" x="1350" y="324" name="inst_6BBC9FE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pit" x="1296" y="324" name="inst_52564941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pit" x="1242" y="324" name="inst_95473879" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="540" y="756" name="inst_12928149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="648" y="756" name="inst_152869B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="756" y="756" name="inst_B6EE1B80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="189" y="216" name="inst_2BE7872A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="594" y="540" name="inst_0A1CAF24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="378" y="1026" name="inst_76677512" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -1692,6 +1692,7 @@
     <font>fonts\mono16</font>
     <font>fonts\mono20</font>
     <font>fonts\mono22</font>
+    <font>fonts\mono22bold</font>
   </fonts>
   <objects name="objects">
     <objects name="Controls">

@@ -372,10 +372,13 @@ instance_activate_object(obj_wind_particle)
         
 with obj_baddie_spawner
 {
-    repeat(ceil(5 * global.coinRate))
-        with instance_create(x, y, obj_coin)
-            value = 1
-    instance_destroy()
+    if parent = other.id
+    {
+        repeat(ceil(5 * global.coinRate))
+            with instance_create(x, y, obj_coin)
+                value = 1
+        instance_destroy()
+    }
 }
 
 //obj_room_type.type = "arenaC"
@@ -391,21 +394,18 @@ with obj_player_parent
         currentHealth = minHealth
 }
 
-lootList = ds_list_create()
-    with obj_lootPoint
-        ds_list_add(other.lootList, id)
+spawner = id
+with obj_lootPoint
+{
+    if parent = other.id
+        other.spawner = self
+}
         
-show_debug_message("Loot Objects: " + string(ds_list_size(lootList)))
-        
-//spawner = ds_list_find_value(lootList,0)
-//instance_create(spawner.x, spawner.y, obj_shield_marker)
-spawner = ds_list_find_value(lootList, 0)
-instance_create(spawner.x, spawner.y, obj_key)
-spawner = ds_list_find_value(lootList, 2)
-with instance_create(spawner.x - 27, spawner.y - 27, obj_minorItem)
+
+instance_create(spawner.x-54, spawner.y, obj_key)
+with instance_create(spawner.x +27, spawner.y-27, obj_minorItem)
     discount = 1
 
-ds_list_destroy(lootList)
 instance_activate_object(obj_arena_blockout)
 
 if global.mp = 1

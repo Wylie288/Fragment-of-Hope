@@ -322,9 +322,7 @@
     <instance objName="obj_sp_ammo" x="1701" y="999" name="inst_2C21F4C5" locked="0" code="type = &quot;y&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sp_ammo" x="1323" y="621" name="inst_15D4F34A" locked="0" code="type = &quot;g&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sp_ammo" x="567" y="567" name="inst_F9AC0A58" locked="0" code="type = &quot;b&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="864" y="621" name="inst_E30EE293" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lootPoint" x="945" y="621" name="inst_DBB1FD82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lootPoint" x="1026" y="621" name="inst_B8EFD875" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room_type" x="999" y="459" name="inst_C52B3737" locked="0" code="type = &quot;arena&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="270" y="270" name="inst_E842C616" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baddiepoint" x="1701" y="810" name="inst_04FA27D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
