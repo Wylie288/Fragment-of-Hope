@@ -117,100 +117,7 @@ repeat(maxBad + 1)
     if (badAdd = obj_bad3c) or (badAdd = obj_bad5) or (badAdd = obj_bad14)
         defenceMax -= 1
 }
-  
 
-
-
-/* Old Enemy Select
-badRemove = "none"
-badDouble = "none"
-
-if irandom(2) > 0
-{
-    badRemoveList = ds_list_create()
-    ds_list_add(badRemoveList, "pressure")
-    ds_list_add(badRemoveList, "aux")
-    ds_list_add(badRemoveList, "aoe")
-    ds_list_add(badRemoveList, "ranged")
-    ds_list_add(badRemoveList, "defense")
-    ds_list_shuffle(badRemoveList)
-    badRemove = ds_list_find_value(badRemoveList,0)
-    badDouble = ds_list_find_value(badRemoveList,1)
-    ds_list_destroy(badRemoveList)
-}
-
-badList = ds_list_create()
-
-pressureList = ds_list_create()
-ds_list_add(pressureList, obj_bad2)
-if global.level >= 0
-ds_list_add(pressureList, obj_bad2b)
-ds_list_add(pressureList, obj_bad6)
-if global.level >= 0
-    ds_list_add(pressureList, obj_bad13)
-ds_list_shuffle(pressureList)
-if badRemove != "pressure"
-    ds_list_add(badList, ds_list_find_value(pressureList,0))
-if badDouble = "pressure"
-    ds_list_add(badList, ds_list_find_value(pressureList,1))
-ds_list_destroy(pressureList)
-
-auxList = ds_list_create()
-ds_list_add(auxList, obj_bad4)
-ds_list_add(auxList, obj_bad8)
-if global.level >= 0
-    ds_list_add(auxList, obj_bad9)
-ds_list_add(auxList, obj_bad10)
-ds_list_add(auxList, obj_bad17)
-ds_list_add(auxList, obj_bad18)
-ds_list_shuffle(auxList)
-if badRemove != "aux"
-    ds_list_add(badList, ds_list_find_value(auxList,0))
-if badDouble = "aux"
-    ds_list_add(badList, ds_list_find_value(auxList,1))
-ds_list_destroy(auxList)
-
-aoeList = ds_list_create()
-ds_list_add(aoeList, obj_bad3b)
-if global.level != 2
-    ds_list_add(aoeList, obj_bad11)
-if global.level != 2 
-    ds_list_add(aoeList, obj_bad12)
-ds_list_add(aoeList, obj_bad15)
-ds_list_shuffle(aoeList)
-if badRemove != "aoe"
-    ds_list_add(badList, ds_list_find_value(aoeList,0))
-if badDouble = "aoe"
-    ds_list_add(badList, ds_list_find_value(aoeList,1))
-ds_list_destroy(aoeList)
-
-rangedList = ds_list_create()
-ds_list_add(pressureList, obj_bad1)
-ds_list_add(rangedList, obj_bad7)
-ds_list_add(rangedList, obj_bad3)
-if global.level != 2 
-    ds_list_add(rangedList, obj_bad16)
-ds_list_shuffle(rangedList)
-if badRemove != "ranged"
-    ds_list_add(badList, ds_list_find_value(rangedList,0))
-if badDouble = "ranged"
-    ds_list_add(badList, ds_list_find_value(rangedList,1))
-ds_list_destroy(rangedList)
-
-defenseList = ds_list_create()
-defenseBadList = ds_list_create()
-if global.level >= 0
-ds_list_add(defenseList, obj_bad3c)
-if global.level != 2
-ds_list_add(defenseList, obj_bad5)
-ds_list_add(defenseList, obj_bad14)
-ds_list_shuffle(defenseList)
-if badRemove != "defense"
-    ds_list_add(defenseBadList, ds_list_find_value(defenseList,0))
-if badDouble = "defense"
-    ds_list_add(defenseBadList, ds_list_find_value(defenseList,1))
-ds_list_destroy(defenseList)
-*/
 bigList = ds_list_create()
 ds_list_add(bigList, obj_bad1_big)
 ds_list_add(bigList, obj_bad2_big)
@@ -232,12 +139,6 @@ if spawnerOn = 1
     ds_list_shuffle(spawnerList)
         
     i = 0
-    /*repeat(clamp(initialBad, 1, 4))
-    {
-        spawner = ds_list_find_value(spawnerList, i)
-        spawner.image_index = 1
-        i++
-    }*/
     
     initialSpawn = 1
 }
