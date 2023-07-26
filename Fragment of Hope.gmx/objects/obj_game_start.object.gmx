@@ -28,7 +28,7 @@
             <string>randomize()
 
 debug = 0
-global.myControls = true
+global.myControls = false
 global.ignoreBattles = false
 
 global.level = 1
@@ -39,6 +39,7 @@ global.gameMode = "coop"
 global.difficulty = "standard"
 global.mp = 0
 global.titleTimer = 0
+global.generation = 0
 
 global.keys = 0
 global.coins = 0

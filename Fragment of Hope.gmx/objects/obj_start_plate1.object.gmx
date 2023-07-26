@@ -53,7 +53,7 @@
     //Floor 1
     if global.fight = 0
     {
-        maxBad = 2 //2
+        maxBad = 2
         totalBad = 5
     }
     if global.fight  = 1

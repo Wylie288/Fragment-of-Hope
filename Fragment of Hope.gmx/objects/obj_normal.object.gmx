@@ -42,6 +42,29 @@ No Alternate Damage can be dealt
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(rm_floor)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="10">
       <action>
         <libid>1</libid>
@@ -94,7 +117,8 @@ No Alternate Damage can be dealt
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_floor)
+            <string>instance_create(x, y, obj_loading)
+alarm[1] = 1
 
 global.hardcore = 0
 </string>

@@ -8,6 +8,37 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_restart()
+    
+global.level += 1
+
+if global.level = 3
+{
+    global.enemyDiff += 1
+    global.enemyDamage += 1
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_player_parent">
       <action>
         <libid>1</libid>
@@ -32,6 +63,8 @@
 }
 else
 {
+    instance_create(x, y, obj_loading)
+    alarm[1] = 1
     with obj_player2
     {
         x = -108
@@ -49,16 +82,6 @@ else
     global.weaponLootI = 0
     ds_list_shuffle(global.normalLoot)
     ds_list_shuffle(global.weaponLoot)
-    
-    room_restart()
-    
-    global.level += 1
-    
-    if global.level = 3
-    {
-        global.enemyDiff += 1
-        global.enemyDamage += 1
-    }
 }
 </string>
           </argument>

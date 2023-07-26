@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 8
+            <string>hitList = ds_list_create()
+speed = 8
 distance = 240
 baseTimeMax = ceil(distance / speed)
 baseTime = baseTimeMax
 bonusTime = 0
-hitList = ds_list_create()
 alarm[0] = sec * 15
 redRadius = 0
 
@@ -340,14 +340,13 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>with instance_create(x,y,obj_gexplosion_damage)
-    {
-        playerID = other.playerID
-        damage = other.damageB * other.explosionDamage
-        radius = other.redRadius
-        pierceDamage = other.pierceDamage
-        bounceDamage = other.bounceDamage
-    }
-instance_destroy()
+{
+    playerID = other.playerID
+    damage = other.damageB * other.explosionDamage
+    radius = other.redRadius
+    pierceDamage = other.pierceDamage
+    bounceDamage = other.bounceDamage
+}
 </string>
           </argument>
         </arguments>

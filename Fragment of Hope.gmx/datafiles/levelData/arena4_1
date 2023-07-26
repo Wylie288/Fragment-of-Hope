@@ -53,12 +53,6 @@ plate1
 216 
 324 
 lootPoint
-1026 
-216 
-lootPoint
-810 
-216 
-lootPoint
 918 
 216 
 wall
@@ -1325,8 +1319,8 @@ lock
 918 
 54 
 barrel
-999 
-432 
+1053 
+405 
 barrel
 999 
 378 
@@ -1382,8 +1376,8 @@ badSpawner
 702 
 270 
 explosiveBarrel
-1053 
-405 
+999 
+432 
 explosiveBarrel
 1161 
 891 

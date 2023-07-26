@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.keys = 0
+global.level = 1
 global.arenaLock = 0
 global.coins = 0
 global.enemySlow = 0
@@ -523,7 +524,7 @@ if global.gameMode = "pvp"
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="82">
+    <event eventtype="9" enumb="66">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -540,7 +541,7 @@ if global.gameMode = "pvp"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart()
+            <string>global.ignoreBattles = false
 </string>
           </argument>
         </arguments>
@@ -566,6 +567,7 @@ if global.gameMode = "pvp"
             <string>room_goto(rm_menu)
 if instance_exists(obj_player1)
     instance_destroy(obj_player1)
+global.level = 1
 instance_destroy()
 </string>
           </argument>

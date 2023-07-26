@@ -146,7 +146,7 @@ if spawnerOn = 1
 instance_create(x+108, y+108, obj_player1_hud)
 
 #define fight_step
-/*if gridMade = 0 and obj_camera.inPlace = 1
+   /*if gridMade = 0 and obj_camera.inPlace = 1
 {
     fight_grid()
     gridMade = 1
@@ -202,7 +202,7 @@ if spawnerOn = 1
                     if initialSpawn = 0
                         spawner.spawnTime = spawnCountTime
                     else
-                        spawner.spawnTime = sec * 2
+                        spawner.spawnTime = sec * 2.3
                         
                     spawner.image_index = 1
                 }

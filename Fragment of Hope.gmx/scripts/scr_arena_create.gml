@@ -70,6 +70,7 @@ while(!file_text_eof(global.textFile))
         case "plate1": acStartPlate(obj_start_plate1, x, y, arena); break;
     }
     
+    global.barrels = 0
     if global.barrels < 2
     {
         switch (line)

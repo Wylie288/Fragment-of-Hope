@@ -1652,6 +1652,7 @@
     <sprite>sprites\spr_bone</sprite>
     <sprite>sprites\spr_skull</sprite>
     <sprite>sprites\sprite243</sprite>
+    <sprite>sprites\spr_loading</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -1682,6 +1683,16 @@
       <script>scripts\genCreatePairList.gml</script>
       <script>scripts\instance_nth_nearest.gml</script>
       <script>scripts\addListToList.gml</script>
+    </scripts>
+    <scripts name="Level Editor">
+      <script>scripts\lgMacro.gml</script>
+      <script>scripts\lgWall.gml</script>
+      <script>scripts\lgRequired.gml</script>
+      <script>scripts\lgRoom.gml</script>
+      <script>scripts\lgFixes.gml</script>
+      <script>scripts\lgFill.gml</script>
+      <script>scripts\lgPlayer.gml</script>
+      <script>scripts\lgViable.gml</script>
     </scripts>
     <script>scripts\toZero.gml</script>
     <script>scripts\getInput.gml</script>
@@ -1951,6 +1962,7 @@
     </objects>
     <objects name="Level Generator">
       <object>objects\obj_floor_generation_new</object>
+      <object>objects\obj_floor_generation_old</object>
       <object>objects\obj_arena_blockout</object>
       <object>objects\obj_store_blockout</object>
       <object>objects\obj_start_blockout</object>
@@ -1970,11 +1982,13 @@
       <object>objects\obj_gen_room</object>
       <object>objects\obj_misc_room</object>
       <object>objects\obj_gen_navpoint</object>
+      <object>objects\obj_loading</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_gamestart</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_floor</room>
     <room>rooms\rm_test</room>
     <rooms name="Rooms">
       <rooms name="Required">
@@ -2084,19 +2098,24 @@
     </rooms>
     <rooms name="Archive">
       <room>rooms\arena_test</room>
-      <room>rooms\rm_floor</room>
       <room>rooms\rm_mp1</room>
       <room>rooms\rm_hardcore</room>
       <room>rooms\rm_difficulty</room>
     </rooms>
   </rooms>
-  <constants number="6">
+  <constants number="12">
     <constant name="WWHITE">5</constant>
     <constant name="sec">144</constant>
     <constant name="WGREEN">1</constant>
     <constant name="WBLUE">2</constant>
     <constant name="WYELLOW">3</constant>
     <constant name="WRED">4</constant>
+    <constant name="LGMACRO">1</constant>
+    <constant name="LGWALL">2</constant>
+    <constant name="LGARENA">3</constant>
+    <constant name="LGROOM">4</constant>
+    <constant name="LGFIXES">5</constant>
+    <constant name="LGFILL">6</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

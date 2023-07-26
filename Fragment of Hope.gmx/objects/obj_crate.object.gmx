@@ -147,18 +147,19 @@ if currentHealth &lt;= 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>currentHealth -= other.damage
-
-with other
-    instance_destroy()
+            <string>if ds_list_find_index(other.hitList, id) = -1
+{
+    ds_list_add(other.hitList, id)
+    currentHealth -= other.damage
+        
+    instance_create(x, y, obj_barrelWood)
     
-instance_create(x, y, obj_barrelWood)
-
-image_blend = c_gray
-alarm[0] = 0.04 * sec
-
-
-audio_play_sound(crate, 1, 0)
+    image_blend = c_gray
+    alarm[0] = 0.04 * sec
+    
+    
+    audio_play_sound(crate, 1, 0)
+}
 </string>
           </argument>
         </arguments>
